@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".UIActivity.ViewStudyActivity"
+            android:label="@string/title_activity_view_study" >
+        </activity>
+        <activity
+            android:name=".UIActivity.SelfCreateActivity"
+            android:label="@string/title_activity_self_create" >
+        </activity>
+        <activity
+            android:name=".UIActivity.LinearLayoutActivity"
+            android:label="@string/title_activity_linear_layout" >
+        </activity>
+        <activity
+            android:name=".UIActivity.TableLayoutActivity"
+            android:label="@string/title_activity_table_layout" >
+        </activity>
     </application>
 
 </manifest>
