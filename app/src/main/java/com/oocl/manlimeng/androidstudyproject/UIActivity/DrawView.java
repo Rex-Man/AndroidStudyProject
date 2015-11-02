@@ -15,18 +15,24 @@ public class DrawView extends View {
 
     public float currentX=40;
     public float currentY=50;
+
     Paint p=new Paint();
     public DrawView(Context context) {
         super(context);
     }
     public DrawView(Context context,AttributeSet set)
     {
-        super(context,set);
+        super(context, set);
     }
     public void onDraw(Canvas canvas)
     {
         super.onDraw(canvas);
-        p.setColor(Color.RED);
+         if(p.getColor()==Color.BLUE) {
+             p.setColor(Color.RED);
+         }else {
+             p.setColor(Color.BLUE);
+         }
+
         canvas.drawCircle(currentX, currentY, 15, p);
 
     }
@@ -34,6 +40,7 @@ public class DrawView extends View {
     {
         currentX=event.getX();
         currentY=event.getY();
+
         invalidate();
         return true;
     }

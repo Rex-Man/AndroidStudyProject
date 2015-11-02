@@ -32,6 +32,14 @@
             android:name=".UIActivity.TableLayoutActivity"
             android:label="@string/title_activity_table_layout" >
         </activity>
+        <activity
+            android:name=".UIActivity.FrameLayoutActivity"
+            android:label="@string/title_activity_frame_layout" >
+        </activity>
+        <activity
+            android:name=".UIActivity.RelativeLayoutActivity"
+            android:label="@string/title_activity_relative_layout" >
+        </activity>
     </application>
 
 </manifest>

@@ -19,6 +19,7 @@ public class SelfCreateActivity extends Activity {
         final DrawView drawView=new DrawView(this);
         drawView.setMinimumWidth(500);
         drawView.setMinimumHeight(300);
+
         relativeLayout.addView(drawView);
     }
 

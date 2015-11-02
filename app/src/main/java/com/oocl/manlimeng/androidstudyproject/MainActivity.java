@@ -10,8 +10,11 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.oocl.manlimeng.androidstudyproject.UIActivity.FrameLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.LinearLayoutActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.RelativeLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SelfCreateActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.TableLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewStudyActivity;
 
 import java.util.ArrayList;
@@ -58,15 +61,15 @@ public class MainActivity extends Activity {
                     startActivity(intent);
                 }
                 if (list.get(arg2).equals("TableLayout")) {
-                    Intent intent = new Intent("com.wps.android.TABLELAYOUT");
+                    Intent intent = new Intent(MainActivity.this, TableLayoutActivity.class);
                     startActivity(intent);
                 }
                 if (list.get(arg2).equals("RelativeLayout")) {
-                    Intent intent = new Intent("com.wps.android.RELATIVELAYOUT");
+                    Intent intent = new Intent(MainActivity.this ,RelativeLayoutActivity.class);
                     startActivity(intent);
                 }
                 if (list.get(arg2).equals("FrameLayout")) {
-                    Intent intent = new Intent("com.wps.android.FRAMELAYOUT");
+                    Intent intent = new Intent(MainActivity.this, FrameLayoutActivity.class);
                     startActivity(intent);
                 }
             }
