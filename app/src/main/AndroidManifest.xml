@@ -40,6 +40,10 @@
             android:name=".UIActivity.RelativeLayoutActivity"
             android:label="@string/title_activity_relative_layout" >
         </activity>
+        <activity
+            android:name=".UIActivity.GridLayoutActivity"
+            android:label="@string/title_activity_grid_layout" >
+        </activity>
     </application>
 
 </manifest>

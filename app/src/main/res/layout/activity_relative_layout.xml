@@ -11,35 +11,35 @@
         android:id="@+id/RelativeId1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00d"
+        android:background="@drawable/xmlcoffeecup"
         android:layout_centerInParent="true">
     </TextView>
     <TextView
         android:id="@+id/RelativeId2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#7d7"
+        android:background="@drawable/xmlcoffeecup"
         android:layout_above="@id/RelativeId1"
         android:layout_alignLeft="@id/RelativeId1"/>
     <TextView
         android:id="@+id/RelativeId3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#0ff"
+        android:background="@drawable/xmlcoffeecup"
         android:layout_below="@id/RelativeId1"
         android:layout_alignLeft="@id/RelativeId1"/>
     <TextView
         android:id="@+id/RelativeId4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#f0e"
+        android:background="@drawable/xmlcoffeecup"
         android:layout_toLeftOf="@id/RelativeId1"
         android:layout_alignTop="@id/RelativeId1"/>
     <TextView
         android:id="@+id/RelativeId5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#f01"
+        android:background="@drawable/xmlcoffeecup"
         android:layout_toRightOf="@id/RelativeId1"
         android:layout_alignTop="@id/RelativeId1"/>
 

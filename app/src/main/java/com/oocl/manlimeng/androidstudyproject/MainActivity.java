@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.oocl.manlimeng.androidstudyproject.UIActivity.FrameLayoutActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.GridLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.LinearLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.RelativeLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SelfCreateActivity;
@@ -35,6 +36,7 @@ public class MainActivity extends Activity {
         list.add("TableLayout");
         list.add("RelativeLayout");
         list.add("FrameLayout");
+        list.add("GridLayout");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -70,6 +72,10 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("FrameLayout")) {
                     Intent intent = new Intent(MainActivity.this, FrameLayoutActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("GridLayout")) {
+                    Intent intent = new Intent(MainActivity.this, GridLayoutActivity.class);
                     startActivity(intent);
                 }
             }
