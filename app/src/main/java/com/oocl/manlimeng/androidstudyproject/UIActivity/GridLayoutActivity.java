@@ -29,7 +29,7 @@ public class GridLayoutActivity extends Activity {
             Button button = new Button(this);
             button.setText(chars[i]);
             button.setTextSize(40);
-            button.setPadding(5, 35, 5, 35);
+            //button.setPadding(5, 35, 5, 35);
 
             GridLayout.Spec rowSpec =GridLayout.spec(i/4+2);
             GridLayout.Spec columnSpec=GridLayout.spec(i%4);
