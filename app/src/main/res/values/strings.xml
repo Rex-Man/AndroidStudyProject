@@ -17,5 +17,8 @@
     <string name="title_activity_frame_layout">FrameLayoutActivity</string>
     <string name="title_activity_relative_layout">RelativeLayoutActivity</string>
     <string name="title_activity_grid_layout">GridLayoutActivity</string>
+    <string name="title_activity_text_view">TextViewActivity</string>
+    <string name="title_activity_edit_text">EditTextActivity</string>
+    <string name="title_activity_button">ButtonActivity</string>
 
 </resources>

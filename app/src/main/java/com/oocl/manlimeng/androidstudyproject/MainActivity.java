@@ -9,13 +9,16 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
+import com.oocl.manlimeng.androidstudyproject.UIActivity.EditTextActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.FrameLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.GridLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.LinearLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.RelativeLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SelfCreateActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.TableLayoutActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.TextViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewStudyActivity;
 
 import java.util.ArrayList;
@@ -37,6 +40,8 @@ public class MainActivity extends Activity {
         list.add("RelativeLayout");
         list.add("FrameLayout");
         list.add("GridLayout");
+        list.add("TextView");
+        list.add("EditText");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -76,6 +81,14 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("GridLayout")) {
                     Intent intent = new Intent(MainActivity.this, GridLayoutActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("TextView")) {
+                    Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("EditText")) {
+                    Intent intent = new Intent(MainActivity.this, EditTextActivity.class);
                     startActivity(intent);
                 }
             }

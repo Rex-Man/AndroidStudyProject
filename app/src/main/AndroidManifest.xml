@@ -44,6 +44,18 @@
             android:name=".UIActivity.GridLayoutActivity"
             android:label="@string/title_activity_grid_layout" >
         </activity>
+        <activity
+            android:name=".UIActivity.TextViewActivity"
+            android:label="@string/title_activity_text_view" >
+        </activity>
+        <activity
+            android:name=".UIActivity.EditTextActivity"
+            android:label="@string/title_activity_edit_text" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ButtonActivity"
+            android:label="@string/title_activity_button" >
+        </activity>
     </application>
 
 </manifest>
