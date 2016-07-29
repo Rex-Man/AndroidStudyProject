@@ -1,11 +1,20 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
     tools:context="com.oocl.manlimeng.androidstudyproject.UIActivity.ButtonActivity">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+
+>
 
     <Button
         android:layout_width="wrap_content"
@@ -21,6 +30,123 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/red"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:textSize="11px"
+        android:text="have picture and text button"/>
 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+     <TableRow>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sex:"/>
+         <RadioGroup android:id="@+id/button_rg"
+             android:orientation="vertical"
+             android:layout_gravity="center_horizontal">
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/male"
+                   android:text="man"
+                   android:checked="true"/>
+               <RadioButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/female"
+                 android:text="woman"
+                 android:checked="true"/>
+         </RadioGroup>
 
+     </TableRow>
+     <TableRow>
+         <TextView  android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="like color:"/>
+         <LinearLayout android:layout_gravity="center_horizontal"
+             android:orientation="vertical"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             >
+             <CheckBox
+                 android:id="@+id/button_checkbox"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Red"
+                 android:checked="true"/>
+             <CheckBox
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Blue"
+                 />
+             <CheckBox
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Green"
+                 />
+         </LinearLayout>
+     </TableRow>
+        <TextView android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </TableLayout>
+
+    <ToggleButton
+        android:id="@+id/button_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="sort_horizontal"
+        android:textOn="sort_vertical"
+        android:checked="true"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_swich"
+        android:textOff="sort_horizontal"
+        android:textOn="sort_vertical"
+        android:thumb="@drawable/check"
+        android:checked="true"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_LinearLayout"
+        android:orientation="horizontal"
+        >
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textButton1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textButton2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textButton3"/>
+    </LinearLayout>
+
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="#f0f"
+        android:format24Hour="yyyy-MM-dd H:mma"/>
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dial="@drawable/watch"
+        android:hand_minute="@drawable/hand"/>
 </LinearLayout>
+</ScrollView>
