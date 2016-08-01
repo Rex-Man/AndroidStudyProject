@@ -29,12 +29,16 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/red"/>
+        android:background="@drawable/red"
+        android:text="nomal button"
+        android:textSize="10pt"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button_selector"
         android:textSize="11px"
+
         android:text="have picture and text button"/>
 
     <TableLayout
@@ -61,6 +65,7 @@
                  android:text="woman"
                  android:checked="true"/>
          </RadioGroup>
+>>>>>>> 7d008a5574bb5e78f645764ba659eadcbaac37b8
 
      </TableRow>
      <TableRow>
