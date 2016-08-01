@@ -148,5 +148,15 @@
         android:layout_height="wrap_content"
         android:dial="@drawable/watch"
         android:hand_minute="@drawable/hand"/>
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_chronometer"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_chronometer_button"/>
 </LinearLayout>
+
 </ScrollView>

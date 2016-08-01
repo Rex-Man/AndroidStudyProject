@@ -2,9 +2,13 @@ package com.oocl.manlimeng.androidstudyproject.UIActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.Chronometer;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
@@ -21,6 +25,8 @@ public class ButtonActivity extends Activity {
     TextView show;
     ToggleButton tb;
     Switch swich_button;
+    Chronometer chronometerTest;
+    Button chronometerStartButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +37,28 @@ public class ButtonActivity extends Activity {
         cb= (CheckBox) findViewById(R.id.button_checkbox);
         tb=(ToggleButton)findViewById(R.id.button_toggle);
         swich_button=(Switch)findViewById(R.id.button_swich);
+        chronometerTest= (Chronometer) findViewById(R.id.button_chronometer);
+        chronometerStartButton= (Button) findViewById(R.id.button_chronometer_button);
+
+        chronometerStartButton.setOnClickListener(new Button.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                chronometerTest.setBase(SystemClock.elapsedRealtime());
+                chronometerTest.start();
+                chronometerStartButton.setEnabled(false);
+            }
+        });
+        chronometerTest.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener() {
+            @Override
+            public void onChronometerTick(Chronometer chronometer) {
+                if(SystemClock.elapsedRealtime()-chronometerTest.getBase()>20*1000)
+                {
+                    chronometerTest.stop();
+                    chronometerStartButton.setEnabled(true);
+                }
+            }
+        });
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
 
             @Override

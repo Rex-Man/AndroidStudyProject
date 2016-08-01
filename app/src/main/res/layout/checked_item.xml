@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:drawableEnd="@drawable/ok"
+    android:shadowDx="3"
+    android:shadowRadius="2"
+    android:shadowDy="3"
+    android:shadowColor="#946">
+</TextView>

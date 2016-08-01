@@ -9,15 +9,28 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
+
+import com.oocl.manlimeng.androidstudyproject.UIActivity.AdapterViewFlipperActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ArrayListViewActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.AutoCompleteTextActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.BaseAdapterActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ButtonActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.EditTextActivity;
+
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ExpandableListViewActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ExtendsListActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.FrameLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.GridLayoutActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.GridViewActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageButtonActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.LinearLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.RelativeLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SelfCreateActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.SimpleAdepterActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.SpinnerActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.StackViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.TableLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.TextViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewStudyActivity;
@@ -44,6 +57,18 @@ public class MainActivity extends Activity {
         list.add("TextView");
         list.add("EditText");
         list.add("Button");
+        list.add("ImageView");
+        list.add("ImageButton");
+        list.add("ArrayListView");
+        list.add("ExtendsListActivity");
+        list.add("SimpleAdapterActivity");
+        list.add("BaseAdapterActivity");
+        list.add("AutoCompleteTVActivity");
+        list.add("GridViewActivity");
+        list.add("ExpandableListActivity");
+        list.add("SpinnerActivity");
+        list.add("AdapterViewFlipperActivity");
+        list.add("StackViewActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -95,6 +120,56 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("Button")) {
                     Intent intent = new Intent(MainActivity.this, ButtonActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ImageView")) {
+                    Intent intent = new Intent(MainActivity.this, ImageViewActivity.class);
+
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ImageButton")) {
+                    Intent intent = new Intent(MainActivity.this, ImageButtonActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ArrayListView")) {
+                    Intent intent = new Intent(MainActivity.this, ArrayListViewActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ExtendsListActivity")) {
+                    Intent intent = new Intent(MainActivity.this, ExtendsListActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("SimpleAdapterActivity")) {
+                    Intent intent = new Intent(MainActivity.this, SimpleAdepterActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("BaseAdapterActivity")) {
+                    Intent intent = new Intent(MainActivity.this, BaseAdapterActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("AutoCompleteTVActivity")) {
+                    Intent intent = new Intent(MainActivity.this, AutoCompleteTextActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("GridViewActivity")) {
+                    Intent intent = new Intent(MainActivity.this, GridViewActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ExpandableListActivity")) {
+                    Intent intent = new Intent(MainActivity.this, ExpandableListViewActivity.class);
+                    startActivity(intent);
+                }
+
+                if (list.get(arg2).equals("SpinnerActivity")) {
+                    Intent intent = new Intent(MainActivity.this, SpinnerActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("AdapterViewFlipperActivity")) {
+                    Intent intent = new Intent(MainActivity.this, AdapterViewFlipperActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("StackViewActivity")) {
+                    Intent intent = new Intent(MainActivity.this, StackViewActivity.class);
                     startActivity(intent);
                 }
             }

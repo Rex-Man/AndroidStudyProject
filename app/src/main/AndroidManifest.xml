@@ -56,6 +56,58 @@
             android:name=".UIActivity.ButtonActivity"
             android:label="@string/title_activity_button" >
         </activity>
+        <activity
+            android:name=".UIActivity.ImageViewActivity"
+            android:label="@string/title_activity_image_view" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ImageButtonActivity"
+            android:label="@string/title_activity_image_button" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ArrayListViewActivity"
+            android:label="@string/title_activity_array_list_view" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ExtendsListActivity"
+            android:label="@string/title_activity_extends_list" >
+        </activity>
+        <activity
+            android:name=".UIActivity.SimpleAdepterActivity"
+            android:label="@string/title_activity_simple_adepter" >
+        </activity>
+        <activity
+            android:name=".UIActivity.BaseAdapterActivity"
+            android:label="@string/title_activity_base_adapter" >
+        </activity>
+        <activity
+            android:name=".UIActivity.AutoCompleteTextActivity"
+            android:label="@string/title_activity_auto_complete_text" >
+        </activity>
+        <activity
+            android:name=".UIActivity.GridViewActivity"
+            android:label="@string/title_activity_grid_view" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ExpandableListViewActivity"
+            android:label="@string/title_activity_expandable_list_view" >
+        </activity>
+        <activity
+            android:name=".UIActivity.SpinnerActivity"
+            android:label="@string/title_activity_spinner" >
+        </activity>
+        <activity
+            android:name=".UIActivity.AdapterViewFlipperActivity"
+            android:label="@string/title_activity_adapter_view_flipper" >
+        </activity>
+        <activity
+            android:name=".UIActivity.StackViewActivity"
+            android:label="@string/title_activity_stack_view" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ProgressBarActivity"
+            android:label="@string/title_activity_progress_bar" >
+        </activity>
     </application>
 
 </manifest>
