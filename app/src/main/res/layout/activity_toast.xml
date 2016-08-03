@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.oocl.manlimeng.androidstudyproject.UIActivity.ToastActivity">
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="简单提示"
+       android:onClick="onToastShowSimpleMessage"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="带图片提示"
+        android:onClick="onToastShowPictureMessage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="select your birthday:"/>
+    <CalendarView
+        android:firstDayOfWeek="3"
+        android:shownWeekCount="4"
+        android:selectedWeekBackgroundColor="#aff"
+        android:focusedMonthDateColor="#f00"
+        android:weekSeparatorLineColor="#ff0"
+        android:unfocusedMonthDateColor="#f9f"
+        android:id="@+id/toast_calendarView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></CalendarView>
+
+</LinearLayout>

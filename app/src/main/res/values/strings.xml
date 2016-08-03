@@ -8,6 +8,7 @@
     <string name="title_activity_linear_layout">LinearLayoutActivity</string>
 
 
+    <string name="tip">提示信息</string>
     <string name="linearlayoutbutton1">按钮1</string>
     <string name="linearlayoutbutton2">按钮2</string>
     <string name="linearlayoutbutton3">按钮3</string>
@@ -20,11 +21,34 @@
     <string name="title_activity_text_view">TextViewActivity</string>
     <string name="title_activity_edit_text">EditTextActivity</string>
     <string name="title_activity_button">ButtonActivity</string>
+
     <string name="title_activity_expandable_list_view">ExpandableListViewActivity</string>
     <string name="title_activity_seek_bar">SeekBarActivity</string>
     <string name="title_activity_view_swicher">ViewSwicherActivity</string>
     <string name="title_activity_image_switcher">ImageSwitcherActivity</string>
     <string name="title_activity_text_switcher">TextSwitcherActivity</string>
     <string name="title_activity_view_flipper">ViewFlipperActivity</string>
+
+    <string name="title_activity_image_view">ImageViewActivity</string>
+    <string name="title_activity_image_button">ImageButtonActivity</string>
+    <string name="title_activity_array_list_view">ArrayListViewActivity</string>
+    <string name="title_activity_extends_list">ExtendsListActivity</string>
+    <string name="title_activity_simple_adepter">SimpleAdepterActivity</string>
+    <string name="title_activity_base_adapter">BaseAdapterActivity</string>
+    <string name="title_activity_auto_complete_text">AutoCompleteTextActivity</string>
+    <string name="title_activity_grid_view">GridViewActivity</string>
+    <string name="title_activity_expandable_list_view">ExpandableListViewActivity</string>
+    <string name="title_activity_spinner">SpinnerActivity</string>
+    <string name="title_activity_adapter_view_flipper">AdapterViewFlipperActivity</string>
+    <string name="title_activity_stack_view">StackViewActivity</string>
+    <string name="title_activity_progress_bar">ProgressBarActivity</string>
+    <string name="title_activity_seek_bar">SeekBarActivity</string>
+    <string name="title_activity_view_swicher">SwitcherViewActivity</string>
+    <string name="title_activity_image_switcher">ImageSwitcherActivity</string>
+    <string name="title_activity_toast">ToastActivity</string>
+    <string name="title_activity_picker">PickerActivity</string>
+    <string name="title_activity_search_view">SearchViewActivity</string>
+    <string name="title_activity_tab_host">TabHostActivity</string>
+    <string name="title_activity_scroll_view">ScrollViewActivity</string>
 
 </resources>

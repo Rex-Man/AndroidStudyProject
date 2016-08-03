@@ -11,9 +11,7 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.SeekBar;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
+
 import com.oocl.manlimeng.androidstudyproject.R;
 
 public class SeekBarActivity extends Activity {

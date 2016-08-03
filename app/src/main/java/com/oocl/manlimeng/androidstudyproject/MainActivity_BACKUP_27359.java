@@ -9,6 +9,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 7510cd034b95cc3ae419d159f657d5a7aacdab43
 
 
 import com.oocl.manlimeng.androidstudyproject.UIActivity.AdapterViewFlipperActivity;
@@ -66,10 +70,12 @@ public class MainActivity extends Activity {
         list.add("TextView");
         list.add("EditText");
         list.add("Button");
+<<<<<<< HEAD
         list.add("SeekBar");
         list.add("ViewSwicher");
         list.add("ImageSwicher");
         list.add("TextSwicher");
+=======
         list.add("ImageView");
         list.add("ImageButton");
         list.add("ArrayListView");
@@ -91,6 +97,7 @@ public class MainActivity extends Activity {
         list.add("SearchViewActivity");
         list.add("TabHostActivity");
         list.add("TabHostActivity");
+>>>>>>> 7510cd034b95cc3ae419d159f657d5a7aacdab43
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -211,6 +218,10 @@ public class MainActivity extends Activity {
                     Intent intent = new Intent(MainActivity.this, ImageSwitcherActivity.class);
                     startActivity(intent);
                 }
+<<<<<<< HEAD
+                if (list.get(arg2).equals("TextSwicher")) {
+                    Intent intent = new Intent(MainActivity.this, TextSwitcherActivity.class);
+=======
                 if (list.get(arg2).equals("ToastActivity")) {
                     Intent intent = new Intent(MainActivity.this, ToastActivity.class);
                     startActivity(intent);
@@ -225,6 +236,7 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("TabHostActivity")) {
                     Intent intent = new Intent(MainActivity.this, TabHostActivity.class);
+>>>>>>> 7510cd034b95cc3ae419d159f657d5a7aacdab43
                     startActivity(intent);
                 }
             }
