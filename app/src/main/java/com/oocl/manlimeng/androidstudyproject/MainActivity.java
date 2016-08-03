@@ -16,6 +16,7 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.ArrayListViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.AutoCompleteTextActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.BaseAdapterActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ButtonActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.DialogActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.EditTextActivity;
 
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ExpandableListViewActivity;
@@ -27,6 +28,7 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageButtonActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageSwitcherActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.LinearLayoutActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.NotificationActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.PickerActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ProgressBarActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.RelativeLayoutActivity;
@@ -95,6 +97,8 @@ public class MainActivity extends Activity {
         list.add("ScrollViewActivity");
         list.add("ViewFlipperActivity");
         list.add("TabHostActivity");
+        list.add("NotificationActivity");
+        list.add("DialogActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -241,6 +245,14 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("TabHostActivity")) {
                     Intent intent = new Intent(MainActivity.this, TabHostActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("NotificationActivity")) {
+                    Intent intent = new Intent(MainActivity.this, NotificationActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("DialogActivity")) {
+                    Intent intent = new Intent(MainActivity.this, DialogActivity.class);
                     startActivity(intent);
                 }
             }

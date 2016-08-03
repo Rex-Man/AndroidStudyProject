@@ -48,5 +48,7 @@
     <string name="title_activity_search_view">SearchViewActivity</string>
     <string name="title_activity_tab_host">TabHostActivity</string>
     <string name="title_activity_scroll_view">ScrollViewActivity</string>
-
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_other">Other</string>
+    <string name="title_activity_dialog">DialogActivity</string>
 </resources>

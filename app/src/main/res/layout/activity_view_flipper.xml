@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:onClick="viewFlipper_next"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:text="&gt;"/>
     <Button
         android:layout_width="wrap_content"

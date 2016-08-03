@@ -32,8 +32,8 @@ public class ViewFlipperActivity extends Activity {
     }
     public void viewFlipper_prev(View view)
     {
-        viewFlipper.setInAnimation(this,R.anim.slide_in_right);
-        viewFlipper.setOutAnimation(this,R.anim.slide_out_left);
+        viewFlipper.setInAnimation(this,android.R.anim.slide_in_left);
+        viewFlipper.setOutAnimation(this,android.R.anim.slide_out_right);
         viewFlipper.showPrevious();
         viewFlipper.stopFlipping();
     }
