@@ -14,10 +14,13 @@ import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import com.oocl.manlimeng.androidstudyproject.R;
+import org.w3c.dom.Text;
+import android.os.Bundle;
+import android.app.Activity;
 
 import com.oocl.manlimeng.androidstudyproject.R;
 
-import org.w3c.dom.Text;
 
 public class ExpandableListViewActivity extends Activity {
 

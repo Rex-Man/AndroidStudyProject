@@ -12,5 +12,4 @@
         android:id="@+id/expandableListView_ListView">
 
     </ExpandableListView>
-
 </RelativeLayout>

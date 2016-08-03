@@ -9,5 +9,5 @@
 	android:id="@+id/cell_imageView"
 	android:layout_width="50dp" 
 	android:layout_height="50dp" 
-	/>	
+	/>
 </LinearLayout>

@@ -25,8 +25,10 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.GridLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.GridViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageButtonActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageViewActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageSwitcherActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.LinearLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.RelativeLayoutActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.SeekBarActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SelfCreateActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SimpleAdepterActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SpinnerActivity;
@@ -34,6 +36,7 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.StackViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.TableLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.TextViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewStudyActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewSwicherActivity;
 
 import java.util.ArrayList;
 
@@ -69,6 +72,10 @@ public class MainActivity extends Activity {
         list.add("SpinnerActivity");
         list.add("AdapterViewFlipperActivity");
         list.add("StackViewActivity");
+        list.add("SeekBar");
+        list.add("ViewSwicher");
+        list.add("ImageSwicher");
+
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -170,7 +177,17 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("StackViewActivity")) {
                     Intent intent = new Intent(MainActivity.this, StackViewActivity.class);
+
+                if (list.get(arg2).equals("SeekBar")) {
+                    Intent intent = new Intent(MainActivity.this, SeekBarActivity.class);
                     startActivity(intent);
+                }
+                if (list.get(arg2).equals("ViewSwicher")) {
+                    Intent intent = new Intent(MainActivity.this, ViewSwicherActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ImageSwicher")) {
+                    Intent intent = new Intent(MainActivity.this, ImageSwitcherActivity.class);                   startActivity(intent);
                 }
             }
 
