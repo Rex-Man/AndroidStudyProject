@@ -20,5 +20,11 @@
     <string name="title_activity_text_view">TextViewActivity</string>
     <string name="title_activity_edit_text">EditTextActivity</string>
     <string name="title_activity_button">ButtonActivity</string>
+    <string name="title_activity_expandable_list_view">ExpandableListViewActivity</string>
+    <string name="title_activity_seek_bar">SeekBarActivity</string>
+    <string name="title_activity_view_swicher">ViewSwicherActivity</string>
+    <string name="title_activity_image_switcher">ImageSwitcherActivity</string>
+    <string name="title_activity_text_switcher">TextSwitcherActivity</string>
+    <string name="title_activity_view_flipper">ViewFlipperActivity</string>
 
 </resources>

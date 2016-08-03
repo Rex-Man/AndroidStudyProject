@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
+
 
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ButtonActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.EditTextActivity;
@@ -21,6 +21,7 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.RelativeLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SeekBarActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SelfCreateActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.TableLayoutActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.TextSwitcherActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.TextViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewStudyActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewSwicherActivity;
@@ -50,6 +51,7 @@ public class MainActivity extends Activity {
         list.add("SeekBar");
         list.add("ViewSwicher");
         list.add("ImageSwicher");
+        list.add("TextSwicher");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -113,6 +115,10 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("ImageSwicher")) {
                     Intent intent = new Intent(MainActivity.this, ImageSwitcherActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("TextSwicher")) {
+                    Intent intent = new Intent(MainActivity.this, TextSwitcherActivity.class);
                     startActivity(intent);
                 }
             }

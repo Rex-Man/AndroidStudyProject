@@ -52,20 +52,18 @@
         <activity
             android:name=".UIActivity.SeekBarActivity"
             android:label="@string/title_activity_seek_bar" />
-        <!--
- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
-        -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
         <activity
             android:name=".UIActivity.ViewSwicherActivity"
             android:label="@string/title_activity_view_swicher" />
         <activity
             android:name=".UIActivity.ImageSwitcherActivity"
-            android:label="@string/title_activity_image_switcher"></activity>
+            android:label="@string/title_activity_image_switcher" />
+        <activity
+            android:name=".UIActivity.TextSwitcherActivity"
+            android:label="@string/title_activity_text_switcher" />
+        <activity
+            android:name=".UIActivity.ViewFlipperActivity"
+            android:label="@string/title_activity_view_flipper"></activity>
     </application>
 
 </manifest>
