@@ -2,16 +2,17 @@ package com.oocl.manlimeng.androidstudyproject.UIActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.Handler
+import android.os.Handler;
 import android.os.Message;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ProgressBar;
 
+
 import com.oocl.manlimeng.androidstudyproject.R;
 
-
 public class ProgressBarActivity extends Activity {
+
 
     int[] data=new int[100];
     int hasData=0;
@@ -34,7 +35,31 @@ public class ProgressBarActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress_bar);
+        progressBar_1= (ProgressBar) findViewById(R.id.processBar_1);
+        progressBar_2= (ProgressBar) findViewById(R.id.processBar_2);
+        new Thread()
+        {
+            public void run()
+            {
+                while(status<100)
+                {
+                    status=doWork();
+                    mHandler.sendEmptyMessage(0x111);
+                }
+            }
+        }.start();
 
+
+    }
+    public int doWork()
+    {
+        data[hasData++]= (int) (Math.random()*100);
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return hasData;
     }
 
     @Override

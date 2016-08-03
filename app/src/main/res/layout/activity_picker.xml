@@ -1,0 +1,72 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.oocl.manlimeng.androidstudyproject.UIActivity.PickerActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="select your detail day :"/>
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/picker_dataPicker"
+        android:layout_gravity="center_horizontal"
+        android:startYear="2000"
+        android:endYear="2017"
+        android:calendarViewShown="true"
+        android:spinnersShown="true"></DatePicker>
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/picker_timerPicker"
+        android:layout_gravity="center_horizontal"></TimePicker>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/picker_showET"
+        android:editable="false"
+        android:cursorVisible="false"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:text="choose lower price:"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+            <NumberPicker
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/picker_numberPicker01"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                ></NumberPicker>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="choose highter price:"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+            <NumberPicker
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_height="80dp"
+                android:id="@+id/picker_numberPicker02"
+                android:layout_width="match_parent"
+                ></NumberPicker>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+</ScrollView>

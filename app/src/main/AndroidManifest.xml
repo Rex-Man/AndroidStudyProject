@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.oocl.manlimeng.androidstudyproject">
+    package="com.oocl.manlimeng.androidstudyproject" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -98,28 +98,40 @@
         <activity
             android:name=".UIActivity.ProgressBarActivity"
             android:label="@string/title_activity_progress_bar" >
-        </activity>        <activity
+        </activity>
+        <activity
             android:name=".UIActivity.ExpandableListViewActivity"
             android:label="@string/title_activity_expandable_list_view" />
         <activity
             android:name=".UIActivity.SeekBarActivity"
             android:label="@string/title_activity_seek_bar" />
-        <!--
- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
-        -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
         <activity
             android:name=".UIActivity.ViewSwicherActivity"
             android:label="@string/title_activity_view_swicher" />
         <activity
             android:name=".UIActivity.ImageSwitcherActivity"
-            android:label="@string/title_activity_image_switcher">
+            android:label="@string/title_activity_image_switcher" >
         </activity>
-
+        <activity
+            android:name=".UIActivity.ToastActivity"
+            android:label="@string/title_activity_toast" >
+        </activity>
+        <activity
+            android:name=".UIActivity.PickerActivity"
+            android:label="@string/title_activity_picker" >
+        </activity>
+        <activity
+            android:name=".UIActivity.SearchViewActivity"
+            android:label="@string/title_activity_search_view" >
+        </activity>
+        <activity
+            android:name=".UIActivity.TabHostActivity"
+            android:label="@string/title_activity_tab_host" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ScrollViewActivity"
+            android:label="@string/title_activity_scroll_view" >
+        </activity>
     </application>
 
 </manifest>

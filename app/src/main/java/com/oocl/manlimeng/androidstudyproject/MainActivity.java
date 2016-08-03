@@ -27,14 +27,19 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageButtonActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageSwitcherActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.LinearLayoutActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.PickerActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ProgressBarActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.RelativeLayoutActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.SearchViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SeekBarActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SelfCreateActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SimpleAdepterActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SpinnerActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.StackViewActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.TabHostActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.TableLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.TextViewActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ToastActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewStudyActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewSwicherActivity;
 
@@ -72,10 +77,15 @@ public class MainActivity extends Activity {
         list.add("SpinnerActivity");
         list.add("AdapterViewFlipperActivity");
         list.add("StackViewActivity");
-        list.add("SeekBar");
-        list.add("ViewSwicher");
-        list.add("ImageSwicher");
-
+        list.add("SeekBarActivity");
+        list.add("ViewSwicherActivity");
+        list.add("ImageSwicherActivity");
+        list.add("ProgressBarActivity");
+        list.add("ToastActivity");
+        list.add("PickerActivity");
+        list.add("SearchViewActivity");
+        list.add("TabHostActivity");
+        list.add("TabHostActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -177,23 +187,45 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("StackViewActivity")) {
                     Intent intent = new Intent(MainActivity.this, StackViewActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ProgressBarActivity")) {
+                    Intent intent = new Intent(MainActivity.this, ProgressBarActivity.class);
+                    startActivity(intent);
+                }
 
-                if (list.get(arg2).equals("SeekBar")) {
+                if (list.get(arg2).equals("SeekBarActivity")) {
                     Intent intent = new Intent(MainActivity.this, SeekBarActivity.class);
                     startActivity(intent);
                 }
-                if (list.get(arg2).equals("ViewSwicher")) {
+                if (list.get(arg2).equals("ViewSwicherActivity")) {
                     Intent intent = new Intent(MainActivity.this, ViewSwicherActivity.class);
                     startActivity(intent);
                 }
-                if (list.get(arg2).equals("ImageSwicher")) {
-                    Intent intent = new Intent(MainActivity.this, ImageSwitcherActivity.class);                   startActivity(intent);
+                if (list.get(arg2).equals("ImageSwicherActivity")) {
+                    Intent intent = new Intent(MainActivity.this, ImageSwitcherActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ToastActivity")) {
+                    Intent intent = new Intent(MainActivity.this, ToastActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("PickerActivity")) {
+                    Intent intent = new Intent(MainActivity.this, PickerActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("SearchViewActivity")) {
+                    Intent intent = new Intent(MainActivity.this, SearchViewActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("TabHostActivity")) {
+                    Intent intent = new Intent(MainActivity.this, TabHostActivity.class);
+                    startActivity(intent);
                 }
             }
 
         });
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
