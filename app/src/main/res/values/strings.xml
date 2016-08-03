@@ -37,14 +37,12 @@
     <string name="title_activity_base_adapter">BaseAdapterActivity</string>
     <string name="title_activity_auto_complete_text">AutoCompleteTextActivity</string>
     <string name="title_activity_grid_view">GridViewActivity</string>
-    <string name="title_activity_expandable_list_view">ExpandableListViewActivity</string>
+
     <string name="title_activity_spinner">SpinnerActivity</string>
     <string name="title_activity_adapter_view_flipper">AdapterViewFlipperActivity</string>
     <string name="title_activity_stack_view">StackViewActivity</string>
     <string name="title_activity_progress_bar">ProgressBarActivity</string>
-    <string name="title_activity_seek_bar">SeekBarActivity</string>
-    <string name="title_activity_view_swicher">SwitcherViewActivity</string>
-    <string name="title_activity_image_switcher">ImageSwitcherActivity</string>
+
     <string name="title_activity_toast">ToastActivity</string>
     <string name="title_activity_picker">PickerActivity</string>
     <string name="title_activity_search_view">SearchViewActivity</string>

@@ -30,6 +30,7 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.LinearLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.PickerActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ProgressBarActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.RelativeLayoutActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ScrollViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SearchViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SeekBarActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SelfCreateActivity;
@@ -41,6 +42,7 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.TableLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.TextSwitcherActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.TextViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ToastActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewFlipperActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewStudyActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewSwicherActivity;
 
@@ -85,11 +87,13 @@ public class MainActivity extends Activity {
         list.add("SeekBarActivity");
         list.add("ViewSwicherActivity");
         list.add("ImageSwicherActivity");
+        list.add("TextSwitcherActivity");
         list.add("ProgressBarActivity");
         list.add("ToastActivity");
         list.add("PickerActivity");
         list.add("SearchViewActivity");
-        list.add("TabHostActivity");
+        list.add("ScrollViewActivity");
+        list.add("ViewFlipperActivity");
         list.add("TabHostActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
@@ -194,6 +198,10 @@ public class MainActivity extends Activity {
                     Intent intent = new Intent(MainActivity.this, StackViewActivity.class);
                     startActivity(intent);
                 }
+                if (list.get(arg2).equals("TextSwitcherActivity")) {
+                    Intent intent = new Intent(MainActivity.this, TextSwitcherActivity.class);
+                    startActivity(intent);
+                }
                 if (list.get(arg2).equals("ProgressBarActivity")) {
                     Intent intent = new Intent(MainActivity.this, ProgressBarActivity.class);
                     startActivity(intent);
@@ -221,6 +229,14 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("SearchViewActivity")) {
                     Intent intent = new Intent(MainActivity.this, SearchViewActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ScrollViewActivity")) {
+                    Intent intent = new Intent(MainActivity.this, ScrollViewActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ViewFlipperActivity")) {
+                    Intent intent = new Intent(MainActivity.this, ViewFlipperActivity.class);
                     startActivity(intent);
                 }
                 if (list.get(arg2).equals("TabHostActivity")) {
