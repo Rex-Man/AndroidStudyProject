@@ -16,10 +16,35 @@
         android:text="SimpleDialog"
         android:onClick="simple"/>
     <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SimpleListDialog"
+    android:onClick="simpleList"/>
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SimpleListDialog"
-        android:onClick="simpleList"/>
+        android:text="SingleChoiceDialog"
+        android:onClick="SingleChoice"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MultiChoiceDialog"
+        android:onClick="MultiChoice"/>
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="CustomDialog"
+    android:onClick="CustomDialog"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SelfViewDialog"
+        android:onClick="SelfViewDialog"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ThemeViewDialog"
+        android:onClick="ThemeViewDialog"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

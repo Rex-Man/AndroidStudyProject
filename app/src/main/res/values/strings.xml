@@ -51,4 +51,6 @@
     <string name="title_activity_notification">NotificationActivity</string>
     <string name="title_activity_other">Other</string>
     <string name="title_activity_dialog">DialogActivity</string>
+    <string name="title_activity_self_view_dialog">SelfViewDialogActivity</string>
+    <string name="title_activity_theme_view_dialog">ThemeViewDialogActivity</string>
 </resources>
