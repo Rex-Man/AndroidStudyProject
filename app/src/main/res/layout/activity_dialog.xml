@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oocl.manlimeng.androidstudyproject.UIActivity.DialogActivity">
+    >
+<LinearLayout
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -8,7 +14,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.oocl.manlimeng.androidstudyproject.UIActivity.DialogActivity">
+>
 
     <Button
         android:layout_width="match_parent"
@@ -41,12 +47,44 @@
         android:text="SelfViewDialog"
         android:onClick="SelfViewDialog"/>
     <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ThemeViewDialog"
+    android:onClick="ThemeViewDialog"/>
+    <Button
+    android:id="@+id/dialog_popupwindow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Popupwindow"
+    android:onClick="Popupwindow"/>
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="DatePickerDialog"
+    android:onClick="DatePickerDialog"/>
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ThemeViewDialog"
-        android:onClick="ThemeViewDialog"/>
+        android:text="TimePickerDialog"
+        android:onClick="TimePickerDialog"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ProgressDialog-Spinner"
+        android:onClick="ProgressDialog_Spinner"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ProgressDialog-indeter"
+        android:onClick="ProgressDialog_Indeter"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ProgressDialog-progress"
+        android:onClick="ProgressDialog_Progress"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/dealog_show"/>
 </LinearLayout>
+</ScrollView>

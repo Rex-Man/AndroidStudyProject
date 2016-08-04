@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.oocl.manlimeng.androidstudyproject">
+    package="com.oocl.manlimeng.androidstudyproject" >
 
     <uses-permission android:name="android.permission.VIBRATE" />
 
@@ -8,10 +8,10 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -128,7 +128,24 @@
             android:label="@string/title_activity_other" />
         <activity
             android:name=".UIActivity.DialogActivity"
-            android:label="@string/title_activity_dialog"></activity>
+            android:label="@string/title_activity_dialog" />
+        <activity
+            android:name=".UIActivity.SelfViewDialogActivity"
+            android:label="@string/title_activity_self_view_dialog" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ThemeViewDialogActivity"
+            android:label="@string/title_activity_theme_view_dialog"
+            android:theme="@android:style/Theme.Material.Dialog" >
+        </activity>
+        <activity
+            android:name=".UIActivity.PopupWindowActivity"
+            android:label="@string/title_activity_popup_window" >
+        </activity>
+        <activity
+            android:name=".UIActivity.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
     </application>
 
 </manifest>

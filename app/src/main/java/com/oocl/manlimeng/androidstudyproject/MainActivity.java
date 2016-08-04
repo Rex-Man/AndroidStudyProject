@@ -28,6 +28,7 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageButtonActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageSwitcherActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.LinearLayoutActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.MenuActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.NotificationActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.PickerActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ProgressBarActivity;
@@ -99,6 +100,7 @@ public class MainActivity extends Activity {
         list.add("TabHostActivity");
         list.add("NotificationActivity");
         list.add("DialogActivity");
+        list.add("MenuActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -253,6 +255,10 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("DialogActivity")) {
                     Intent intent = new Intent(MainActivity.this, DialogActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("MenuActivity")) {
+                    Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                     startActivity(intent);
                 }
             }

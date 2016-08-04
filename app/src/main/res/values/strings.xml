@@ -53,4 +53,6 @@
     <string name="title_activity_dialog">DialogActivity</string>
     <string name="title_activity_self_view_dialog">SelfViewDialogActivity</string>
     <string name="title_activity_theme_view_dialog">ThemeViewDialogActivity</string>
+    <string name="title_activity_popup_window">PopupWindowActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
 </resources>
