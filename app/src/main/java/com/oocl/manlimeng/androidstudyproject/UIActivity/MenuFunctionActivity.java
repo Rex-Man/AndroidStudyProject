@@ -42,18 +42,18 @@ public class MenuFunctionActivity extends Activity {
         fontMenu.add(0, FONT_10, 0, "10 号字体");
         fontMenu.add(0, FONT_12, 0, "12 号字体");
         fontMenu.add(0, FONT_14, 0, "14 号字体");
-        fontMenu.add(0,FONT_16,0,"16 号字体");
-        fontMenu.add(0,FONT_18,0,"18 号字体");
+        fontMenu.add(0, FONT_16, 0, "16 号字体");
+        fontMenu.add(0, FONT_18, 0, "18 号字体");
 
-        menu.add(0, PLAIN_ITEM, 0, "普通菜单项");
-
+        MenuItem sampleItem= menu.add(0, PLAIN_ITEM, 0, "普通菜单项");
+        sampleItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
         SubMenu colorMenu=menu.addSubMenu("选择颜色");
         colorMenu.setHeaderTitle("选择文字颜色");
         colorMenu.setHeaderIcon(R.drawable.color);
         colorMenu.setIcon(R.drawable.color);
         colorMenu.add(0, FONT_RED, 0, "红色");
-        colorMenu.add(0,FONT_GREEN,0,"绿色");
-        colorMenu.add(0,FONT_BLUE,0,"蓝色");
+        colorMenu.add(0, FONT_GREEN, 0, "绿色");
+        colorMenu.add(0, FONT_BLUE, 0, "蓝色");
 
         SubMenu checkMenu=menu.addSubMenu("可以勾选的菜单");
         checkMenu.setIcon(R.drawable.font);
@@ -67,15 +67,16 @@ public class MenuFunctionActivity extends Activity {
         checkGroupMenu.setIcon(R.drawable.font);
         checkGroupMenu.setHeaderIcon(R.drawable.font);
         checkGroupMenu.setHeaderTitle("选择勾选的组菜单");
-        checkGroupMenu.setGroupCheckable(0,true,true);
-        checkGroupMenu.add(0,0x131,0,"Item11");
+        checkGroupMenu.setGroupCheckable(0, true, true);
+        checkGroupMenu.add(0, 0x131, 0, "Item11");
         checkGroupMenu.add(0,0x132,1,"Item21");
         checkGroupMenu.add(0,0x133,2,"Item31");
         checkGroupMenu.add(1,0x144,0,"Item12");
-        checkGroupMenu.add(1,0x144,1,"Item22");
-        checkGroupMenu.add(1,0x146,2,"Item32");
+        checkGroupMenu.add(1, 0x144, 1, "Item22");
+        checkGroupMenu.add(1, 0x146, 2, "Item32");
 
         SubMenu progMenu=menu.addSubMenu("启动程序");
+
         progMenu.setHeaderIcon(R.drawable.font);
         progMenu.setHeaderTitle("选择要启动的程序");
         MenuItem menuItem=progMenu.add("查看Swift");

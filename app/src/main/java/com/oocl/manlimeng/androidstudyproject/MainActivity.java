@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ActionBarActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.AdapterViewFlipperActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ArrayListViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.AutoCompleteTextActivity;
@@ -101,6 +102,7 @@ public class MainActivity extends Activity {
         list.add("NotificationActivity");
         list.add("DialogActivity");
         list.add("MenuActivity");
+        list.add("ActionBarActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -259,6 +261,10 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("MenuActivity")) {
                     Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ActionBarActivity")) {
+                    Intent intent = new Intent(MainActivity.this, ActionBarActivity.class);
                     startActivity(intent);
                 }
             }

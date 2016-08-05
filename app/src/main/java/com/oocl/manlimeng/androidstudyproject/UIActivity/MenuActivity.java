@@ -31,5 +31,14 @@ public class MenuActivity extends Activity {
         Intent intent=new Intent(MenuActivity.this,ContextMenuActivity.class);
         startActivity(intent);
     }
-
+    public void xmlMenu(View view)
+    {
+        Intent intent=new Intent(MenuActivity.this,XMLMenuActivity.class);
+        startActivity(intent);
+    }
+    public void PopupMenu(View view)
+    {
+        Intent intent=new Intent(MenuActivity.this,PopupMenuActivity.class);
+        startActivity(intent);
+    }
 }

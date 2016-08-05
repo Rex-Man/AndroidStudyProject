@@ -1,31 +1,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:orientation="vertical"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.oocl.manlimeng.androidstudyproject.UIActivity.MenuActivity">
+    tools:context="com.oocl.manlimeng.androidstudyproject.UIActivity.ActionBarActivity">
 
     <Button
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Menu Function"
-        android:onClick="menuFunction"/>
+        android:text="ActionBarTest"
+        android:onClick="ActionBarTest"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Context Menu"
-        android:onClick="contextMenu"/>
+        android:text="ActionBarItemTest"
+        android:onClick="ActionBarItemTest"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="XML Menu"
-        android:onClick="xmlMenu"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Popup Menu"
-        android:onClick="PopupMenu"/>
+        android:text="ActionBarHomeTest"
+        android:onClick="ActionBarHome"/>
 
 </LinearLayout>

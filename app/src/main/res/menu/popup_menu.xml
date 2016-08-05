@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:title="@string/action_settings" android:icon="@drawable/font">
+       <menu>
+           <group>
+               <item android:id="@+id/item01"
+                   android:title="item01"></item>
+               <item android:id="@+id/item02"
+                   android:title="item02"></item>
+               <item android:id="@+id/item03"
+                   android:title="item03"></item>
+               <item android:id="@+id/exit"
+                   android:title="exit"></item>
+           </group>
+       </menu>
+   </item>
+</menu>
