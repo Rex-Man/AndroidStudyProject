@@ -172,6 +172,26 @@
             android:name=".UIActivity.ActionBarHomeActivity"
             android:label="@string/title_activity_action_bar_home" >
         </activity>
+        <activity
+            android:name=".UIActivity.ActionBarHomeFirstActivity"
+            android:label="@string/title_activity_action_bar_home_first" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ActionBarHomeSecondActivity"
+            android:label="@string/title_activity_action_bar_home_second" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ActionBarViewActivity"
+            android:label="@string/title_activity_action_bar_view" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ActionBarTabActivity"
+            android:label="@string/title_activity_action_bar_tab" >
+        </activity>
+        <activity
+            android:name=".UIActivity.AcrionBarDropDownActivity"
+            android:label="@string/title_activity_acrion_bar_drop_down" >
+        </activity>
     </application>
 
 </manifest>

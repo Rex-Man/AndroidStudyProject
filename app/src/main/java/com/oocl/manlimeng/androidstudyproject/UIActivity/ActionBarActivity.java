@@ -53,4 +53,19 @@ public class ActionBarActivity extends Activity {
         Intent intent=new Intent(ActionBarActivity.this,ActionBarHomeActivity.class);
         startActivity(intent);
     }
+    public void ActionBarView(View view)
+    {
+        Intent intent=new Intent(ActionBarActivity.this,ActionBarViewActivity.class);
+        startActivity(intent);
+    }
+    public void ActionBarTab(View view)
+    {
+        Intent intent=new Intent(ActionBarActivity.this,ActionBarTabActivity.class);
+        startActivity(intent);
+    }
+    public void ActionBarDropDown(View view)
+    {
+        Intent intent=new Intent(ActionBarActivity.this,AcrionBarDropDownActivity.class);
+        startActivity(intent);
+    }
 }

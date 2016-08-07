@@ -23,5 +23,19 @@
         android:layout_height="wrap_content"
         android:text="ActionBarHomeTest"
         android:onClick="ActionBarHome"/>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ActionBarViewTest"
+        android:onClick="ActionBarView"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ActionBarTabTest"
+        android:onClick="ActionBarTab"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ActionBarDropDownTest"
+        android:onClick="ActionBarDropDown"/>
 </LinearLayout>

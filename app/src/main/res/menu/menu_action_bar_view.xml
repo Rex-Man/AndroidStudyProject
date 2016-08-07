@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.oocl.manlimeng.androidstudyproject.UIActivity.ActionBarViewActivity">
+    <item android:id="@+id/actionBar_view_search" android:orderInCategory="100" android:showAsAction="always"
+        android:actionViewClass="android.widget.SearchView" android:title="Search "/>
+    <item android:id="@+id/actionBar_view_progress" android:orderInCategory="100" android:showAsAction="always"
+        android:actionLayout="@layout/clock" android:title="clock "/>
+</menu>

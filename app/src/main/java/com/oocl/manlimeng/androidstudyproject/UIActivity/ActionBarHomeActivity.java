@@ -2,6 +2,7 @@ package com.oocl.manlimeng.androidstudyproject.UIActivity;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -24,6 +25,7 @@ public class ActionBarHomeActivity extends Activity {
         actionBar=getActionBar();
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeButtonEnabled(true);
 
     }
 
@@ -32,22 +34,27 @@ public class ActionBarHomeActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         //getMenuInflater().inflate(R.menu.menu_action_bar_home, menu);
         MenuInflater inflator=new MenuInflater(this);
-        inflator.inflater(R.menu.menu_action_bar_home,menu);
+        inflator.inflate(R.menu.menu_action_bar_home, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        if(item.isCheckable())
+        {
+            item.setChecked(true);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
         }
-
+        switch (item.getItemId())
+        {
+            case android.R.id.home:
+                Intent intent = new Intent(this, ActionBarHomeFirstActivity.class);
+                // 添加额外的Flag，将Activity栈中处于FirstActivity之上的Activity弹出
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                // 启动intent对应的Activity
+                startActivity(intent);
+                break;
+        }
         return super.onOptionsItemSelected(item);
     }
 }

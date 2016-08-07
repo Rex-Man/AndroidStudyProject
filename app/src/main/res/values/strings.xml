@@ -77,4 +77,12 @@
     <string name="title_activity_action_bar_test">ActionBarTestActivity</string>
     <string name="title_activity_action_bar_item">ActionBarItemActivity</string>
     <string name="title_activity_action_bar_home">ActionBarHomeActivity</string>
+    <string name="title_activity_action_bar_home_first">ActionBarHomeFirstActivity</string>
+    <string name="title_activity_action_bar_home_second">ActionBarHomeSecondActivity</string>
+    <string name="title_activity_action_bar_view">ActionBarViewActivity</string>
+    <string name="title_activity_action_bar_tab">ActionBarTabActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_acrion_bar_drop_down">AcrionBarDropDownActivity</string>
 </resources>
