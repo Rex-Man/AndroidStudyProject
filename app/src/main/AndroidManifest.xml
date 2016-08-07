@@ -192,6 +192,18 @@
             android:name=".UIActivity.AcrionBarDropDownActivity"
             android:label="@string/title_activity_acrion_bar_drop_down" >
         </activity>
+        <activity
+            android:name=".UIActivity.AsyncTaskActivity"
+            android:label="@string/title_activity_async_task" >
+        </activity>
+        <activity
+            android:name=".UIActivity.HandlerActivity"
+            android:label="@string/title_activity_handler" >
+        </activity>
+        <activity
+            android:name=".UIActivity.HandlerInChildActivity"
+            android:label="@string/title_activity_handler_in_child" >
+        </activity>
     </application>
 
 </manifest>

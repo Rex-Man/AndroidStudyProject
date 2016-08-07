@@ -85,4 +85,7 @@
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_acrion_bar_drop_down">AcrionBarDropDownActivity</string>
+    <string name="title_activity_async_task">AsyncTaskActivity</string>
+    <string name="title_activity_handler">HandlerActivity</string>
+    <string name="title_activity_handler_in_child">HandlerInChildActivity</string>
 </resources>

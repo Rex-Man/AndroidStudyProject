@@ -14,6 +14,7 @@ import android.widget.ListView;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ActionBarActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.AdapterViewFlipperActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ArrayListViewActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.AsyncTaskActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.AutoCompleteTextActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.BaseAdapterActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ButtonActivity;
@@ -25,6 +26,7 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.ExtendsListActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.FrameLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.GridLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.GridViewActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.HandlerActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageButtonActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ImageSwitcherActivity;
@@ -103,6 +105,8 @@ public class MainActivity extends Activity {
         list.add("DialogActivity");
         list.add("MenuActivity");
         list.add("ActionBarActivity");
+        list.add("AsyncTaskActivity");
+        list.add("HandlerActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -265,6 +269,14 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("ActionBarActivity")) {
                     Intent intent = new Intent(MainActivity.this, ActionBarActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("AsyncTaskActivity")) {
+                    Intent intent = new Intent(MainActivity.this, AsyncTaskActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("HandlerActivity")) {
+                    Intent intent = new Intent(MainActivity.this, HandlerActivity.class);
                     startActivity(intent);
                 }
             }
