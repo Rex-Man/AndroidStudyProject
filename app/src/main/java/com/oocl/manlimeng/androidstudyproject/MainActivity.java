@@ -12,6 +12,9 @@ import android.widget.ListView;
 
 
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ActionBarActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy.ActivityForResultActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy.BundleTestActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy.LancherActivityCaseActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.AdapterViewFlipperActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ArrayListViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.AsyncTaskActivity;
@@ -107,6 +110,9 @@ public class MainActivity extends Activity {
         list.add("ActionBarActivity");
         list.add("AsyncTaskActivity");
         list.add("HandlerActivity");
+        list.add("LaucherActivity");
+        list.add("BundleActivity");
+        list.add("ActivityForResultActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -277,6 +283,19 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("HandlerActivity")) {
                     Intent intent = new Intent(MainActivity.this, HandlerActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("LaucherActivity")) {
+
+                    Intent intent = new Intent(MainActivity.this, LancherActivityCaseActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("BundleActivity")) {
+                    Intent intent = new Intent(MainActivity.this, BundleTestActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ActivityForResultActivity")) {
+                    Intent intent = new Intent(MainActivity.this, ActivityForResultActivity.class);
                     startActivity(intent);
                 }
             }

@@ -88,4 +88,11 @@
     <string name="title_activity_async_task">AsyncTaskActivity</string>
     <string name="title_activity_handler">HandlerActivity</string>
     <string name="title_activity_handler_in_child">HandlerInChildActivity</string>
+    <string name="title_activity_lancher_activity_case">LancherActivityCaseActivity</string>
+    <string name="title_activity_expandable_list_test">ExpandableListTestActivity</string>
+    <string name="title_activity_preference_test">PreferenceTestActivity</string>
+    <string name="title_activity_bundle_test">BundleTestActivity</string>
+    <string name="title_activity_result_bundle">ResultBundleActivity</string>
+    <string name="title_activity_activity_for_result">ActivityForResultActivity</string>
+    <string name="title_activity_select_city">SelectCityActivity</string>
 </resources>

@@ -88,9 +88,6 @@
             android:name=".UIActivity.ProgressBarActivity"
             android:label="@string/title_activity_progress_bar" />
         <activity
-            android:name=".UIActivity.ExpandableListViewActivity"
-            android:label="@string/title_activity_expandable_list_view" />
-        <activity
             android:name=".UIActivity.SeekBarActivity"
             android:label="@string/title_activity_seek_bar" />
         <activity
@@ -203,6 +200,34 @@
         <activity
             android:name=".UIActivity.HandlerInChildActivity"
             android:label="@string/title_activity_handler_in_child" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.LancherActivityCaseActivity"
+            android:label="@string/title_activity_lancher_activity_case" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.ExpandableListTestActivity"
+            android:label="@string/title_activity_expandable_list_test" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.PreferenceTestActivity"
+            android:label="@string/title_activity_preference_test" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.BundleTestActivity"
+            android:label="@string/title_activity_bundle_test" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.ResultBundleActivity"
+            android:label="@string/title_activity_result_bundle" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.ActivityForResultActivity"
+            android:label="@string/title_activity_activity_for_result" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.SelectCityActivity"
+            android:label="@string/title_activity_select_city" >
         </activity>
     </application>
 
