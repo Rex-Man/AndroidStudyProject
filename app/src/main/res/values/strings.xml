@@ -95,4 +95,6 @@
     <string name="title_activity_result_bundle">ResultBundleActivity</string>
     <string name="title_activity_activity_for_result">ActivityForResultActivity</string>
     <string name="title_activity_select_city">SelectCityActivity</string>
+    <string name="title_activity_static_use_fragment">StaticUseFragmentActivity</string>
+    <string name="title_activity_study_fragment">studyFragmentActivity</string>
 </resources>

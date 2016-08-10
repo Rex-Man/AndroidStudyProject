@@ -9,8 +9,8 @@
         android:title="界面选项设置"
         android:summary="设置显示界面的相关选项">
         <extra
-            android:name="website"
-            android:value="www.163.com"></extra>
+        android:name="website"
+        android:value="www.163.com"></extra>
     </header>
     <header
         android:icon="@drawable/ic_settings_display"

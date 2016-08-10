@@ -229,6 +229,14 @@
             android:name=".UIActivity.ActivityStudy.SelectCityActivity"
             android:label="@string/title_activity_select_city" >
         </activity>
+        <activity
+            android:name=".UIActivity.FragmentStudy.StaticUseFragmentActivity"
+            android:label="@string/title_activity_static_use_fragment" >
+        </activity>
+        <activity
+            android:name=".UIActivity.FragmentStudy.studyFragmentActivity"
+            android:label="@string/title_activity_study_fragment" >
+        </activity>
     </application>
 
 </manifest>

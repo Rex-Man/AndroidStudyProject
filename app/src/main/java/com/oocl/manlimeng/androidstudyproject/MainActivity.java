@@ -26,6 +26,7 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.EditTextActivity;
 
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ExpandableListViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ExtendsListActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.FragmentStudy.studyFragmentActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.FrameLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.GridLayoutActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.GridViewActivity;
@@ -113,6 +114,7 @@ public class MainActivity extends Activity {
         list.add("LaucherActivity");
         list.add("BundleActivity");
         list.add("ActivityForResultActivity");
+        list.add("StudyFragmentActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -298,6 +300,11 @@ public class MainActivity extends Activity {
                     Intent intent = new Intent(MainActivity.this, ActivityForResultActivity.class);
                     startActivity(intent);
                 }
+                if (list.get(arg2).equals("StudyFragmentActivity")) {
+                    Intent intent = new Intent(MainActivity.this, studyFragmentActivity.class);
+                    startActivity(intent);
+                }
+
             }
 
         });

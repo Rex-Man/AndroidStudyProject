@@ -1,41 +1,36 @@
-package com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy;
+package com.oocl.manlimeng.androidstudyproject.UIActivity.FragmentStudy;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.view.View;
 
 import com.oocl.manlimeng.androidstudyproject.R;
-import com.oocl.manlimeng.androidstudyproject.entity.Person;
 
-import org.w3c.dom.Text;
-
-public class ResultBundleActivity extends Activity {
+public class studyFragmentActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result_bundle);
-        TextView name= (TextView) findViewById(R.id.resultName);
-        TextView password = (TextView) findViewById(R.id.resultPassword);
-        TextView gender= (TextView) findViewById(R.id.resultGender);
+        setContentView(R.layout.activity_study_fragment);
+    }
 
-        Intent intent=getIntent();
-        Person person= (Person) intent.getSerializableExtra("person");
-
-        name.setText(person.getName());
-        password.setText(person.getPassword());
-        gender.setText(person.getGender());
-
+    public void StaticFragment(View view)
+    {
+        Intent intent=new Intent(studyFragmentActivity.this,StaticUseFragmentActivity.class);
+        startActivity(intent);
+    }
+    public void ActiveFragment(View view)
+    {
 
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_result_bundle, menu);
+        getMenuInflater().inflate(R.menu.menu_study, menu);
         return true;
     }
 
