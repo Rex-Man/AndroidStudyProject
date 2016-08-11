@@ -22,7 +22,7 @@ public class ResultBundleActivity extends Activity {
         TextView password = (TextView) findViewById(R.id.resultPassword);
         TextView gender= (TextView) findViewById(R.id.resultGender);
 
-        Intent intent=getIntent();
+        Intent intent= getIntent();
         Person person= (Person) intent.getSerializableExtra("person");
 
         name.setText(person.getName());

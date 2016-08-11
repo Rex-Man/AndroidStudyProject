@@ -1,6 +1,8 @@
 package com.oocl.manlimeng.androidstudyproject.UIActivity.FragmentStudy;
 
 import android.app.Activity;
+import android.app.Fragment;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,7 +10,7 @@ import android.view.Window;
 
 import com.oocl.manlimeng.androidstudyproject.R;
 
-public class StaticUseFragmentActivity extends Activity {
+public class StaticUseFragmentActivity extends Activity implements TitleFragment.OnFragmentInteractionListener, ContentFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,5 +39,10 @@ public class StaticUseFragmentActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

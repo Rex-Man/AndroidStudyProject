@@ -7,7 +7,7 @@
     android:key="ring_key"
     android:showSilent="true"
     ></RingtonePreference>
-     <preferenceCategory android:title="个人信息设置组">
+     <PreferenceCategory android:title="个人信息设置组">
         <EditTextPreference
             android:key="name"
             android:title="填写用户名"
@@ -22,7 +22,7 @@
              android:entries="@array/gender_name_list"
              android:entryValues="@array/gender_value_list">
              ></ListPreference>
-    </preferenceCategory>
+    </PreferenceCategory>
     <PreferenceCategory android:title="系统功能设置组">
         <CheckBoxPreference android:key="autoSave"
             android:title="自动保存进度"

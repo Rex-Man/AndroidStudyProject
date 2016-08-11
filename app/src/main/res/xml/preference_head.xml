@@ -16,7 +16,7 @@
         android:icon="@drawable/ic_settings_display"
         android:title="使用Intent"
         android:summary="使用Intent 启动某个Activity">
-        <intent android:action="android.intent.action.view"
+        <intent android:action="android.intent.action.VIEW"
             android.data="http://www.163.com"></intent>
     </header>
 

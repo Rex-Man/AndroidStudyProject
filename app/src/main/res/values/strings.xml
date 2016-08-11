@@ -82,7 +82,7 @@
     <string name="title_activity_action_bar_view">ActionBarViewActivity</string>
     <string name="title_activity_action_bar_tab">ActionBarTabActivity</string>
 
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_acrion_bar_drop_down">AcrionBarDropDownActivity</string>
     <string name="title_activity_async_task">AsyncTaskActivity</string>
@@ -97,4 +97,5 @@
     <string name="title_activity_select_city">SelectCityActivity</string>
     <string name="title_activity_static_use_fragment">StaticUseFragmentActivity</string>
     <string name="title_activity_study_fragment">studyFragmentActivity</string>
+    <string name="title_activity_show_new">ShowNewActivity</string>
 </resources>

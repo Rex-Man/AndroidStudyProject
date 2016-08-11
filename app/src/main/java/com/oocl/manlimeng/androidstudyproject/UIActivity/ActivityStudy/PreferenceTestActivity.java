@@ -1,6 +1,7 @@
 package com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.Menu;
@@ -8,10 +9,11 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 import com.oocl.manlimeng.androidstudyproject.R;
+import com.oocl.manlimeng.androidstudyproject.fragment.*;
 
 import java.util.List;
 
-public class PreferenceTestActivity extends PreferenceActivity {
+public class PreferenceTestActivity extends PreferenceActivity implements prefs1Fragment.OnFragmentInteractionListener,Prefs2Fragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +59,8 @@ public class PreferenceTestActivity extends PreferenceActivity {
     }
 
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
 
-
-
+    }
 }

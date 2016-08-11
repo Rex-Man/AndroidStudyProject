@@ -33,8 +33,9 @@ public class BundleTestActivity extends Activity {
                 person.setName(name.getText().toString());
                 person.setPassword(password.getText().toString());
                 Bundle bundle=new Bundle();
-                bundle.putSerializable("persion",person);
+                bundle.putSerializable("person",person);
                 Intent intent=new Intent(BundleTestActivity.this,ResultBundleActivity.class);
+                intent.putExtras(bundle);
                 startActivity(intent);
 
             }

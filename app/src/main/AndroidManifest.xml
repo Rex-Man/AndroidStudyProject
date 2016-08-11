@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.oocl.manlimeng.androidstudyproject" >
+    package="com.oocl.manlimeng.androidstudyproject">
 
     <uses-permission android:name="android.permission.VIBRATE" />
 
@@ -8,10 +8,10 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -147,95 +147,81 @@
             android:label="@string/title_activity_context_menu" />
         <activity
             android:name=".UIActivity.XMLMenuActivity"
-            android:label="@string/title_activity_xmlmenu" >
-        </activity>
+            android:label="@string/title_activity_xmlmenu"></activity>
         <activity
             android:name=".UIActivity.PopupMenuActivity"
-            android:label="@string/title_activity_popup_menu" >
-        </activity>
+            android:label="@string/title_activity_popup_menu"></activity>
         <activity
             android:name=".UIActivity.ActionBarActivity"
-            android:label="@string/title_activity_action_bar" >
-        </activity>
+            android:label="@string/title_activity_action_bar"></activity>
         <activity
             android:name=".UIActivity.ActionBarTestActivity"
-            android:label="@string/title_activity_action_bar_test" >
-        </activity>
+            android:label="@string/title_activity_action_bar_test"></activity>
         <activity
             android:name=".UIActivity.ActionBarItemActivity"
-            android:label="@string/title_activity_action_bar_item" >
-        </activity>
+            android:label="@string/title_activity_action_bar_item"></activity>
         <activity
             android:name=".UIActivity.ActionBarHomeActivity"
-            android:label="@string/title_activity_action_bar_home" >
-        </activity>
+            android:label="@string/title_activity_action_bar_home"></activity>
         <activity
             android:name=".UIActivity.ActionBarHomeFirstActivity"
-            android:label="@string/title_activity_action_bar_home_first" >
-        </activity>
+            android:label="@string/title_activity_action_bar_home_first"></activity>
         <activity
             android:name=".UIActivity.ActionBarHomeSecondActivity"
-            android:label="@string/title_activity_action_bar_home_second" >
-        </activity>
+            android:label="@string/title_activity_action_bar_home_second"></activity>
         <activity
             android:name=".UIActivity.ActionBarViewActivity"
-            android:label="@string/title_activity_action_bar_view" >
-        </activity>
+            android:label="@string/title_activity_action_bar_view"></activity>
         <activity
             android:name=".UIActivity.ActionBarTabActivity"
-            android:label="@string/title_activity_action_bar_tab" >
-        </activity>
+            android:label="@string/title_activity_action_bar_tab"></activity>
         <activity
             android:name=".UIActivity.AcrionBarDropDownActivity"
-            android:label="@string/title_activity_acrion_bar_drop_down" >
-        </activity>
+            android:label="@string/title_activity_acrion_bar_drop_down"></activity>
         <activity
             android:name=".UIActivity.AsyncTaskActivity"
-            android:label="@string/title_activity_async_task" >
-        </activity>
+            android:label="@string/title_activity_async_task"></activity>
         <activity
             android:name=".UIActivity.HandlerActivity"
-            android:label="@string/title_activity_handler" >
-        </activity>
+            android:label="@string/title_activity_handler"></activity>
         <activity
             android:name=".UIActivity.HandlerInChildActivity"
-            android:label="@string/title_activity_handler_in_child" >
-        </activity>
+            android:label="@string/title_activity_handler_in_child"></activity>
         <activity
             android:name=".UIActivity.ActivityStudy.LancherActivityCaseActivity"
-            android:label="@string/title_activity_lancher_activity_case" >
-        </activity>
+            android:label="@string/title_activity_lancher_activity_case"></activity>
         <activity
             android:name=".UIActivity.ActivityStudy.ExpandableListTestActivity"
-            android:label="@string/title_activity_expandable_list_test" >
-        </activity>
+            android:label="@string/title_activity_expandable_list_test"></activity>
         <activity
             android:name=".UIActivity.ActivityStudy.PreferenceTestActivity"
-            android:label="@string/title_activity_preference_test" >
-        </activity>
+            android:label="@string/title_activity_preference_test"></activity>
         <activity
             android:name=".UIActivity.ActivityStudy.BundleTestActivity"
-            android:label="@string/title_activity_bundle_test" >
-        </activity>
+            android:label="@string/title_activity_bundle_test"></activity>
         <activity
             android:name=".UIActivity.ActivityStudy.ResultBundleActivity"
-            android:label="@string/title_activity_result_bundle" >
-        </activity>
+            android:label="@string/title_activity_result_bundle"></activity>
         <activity
             android:name=".UIActivity.ActivityStudy.ActivityForResultActivity"
-            android:label="@string/title_activity_activity_for_result" >
-        </activity>
+            android:label="@string/title_activity_activity_for_result"></activity>
         <activity
             android:name=".UIActivity.ActivityStudy.SelectCityActivity"
-            android:label="@string/title_activity_select_city" >
-        </activity>
+            android:label="@string/title_activity_select_city"></activity>
         <activity
             android:name=".UIActivity.FragmentStudy.StaticUseFragmentActivity"
-            android:label="@string/title_activity_static_use_fragment" >
-        </activity>
+            android:label="@string/title_activity_static_use_fragment"></activity>
         <activity
             android:name=".UIActivity.FragmentStudy.studyFragmentActivity"
-            android:label="@string/title_activity_study_fragment" >
+            android:label="@string/title_activity_study_fragment"></activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.ShowNewActivity"
+            android:label="@string/title_activity_show_new">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <data android:host="www.163.com"
+                    android:scheme="http"></data>
+            </intent-filter>
         </activity>
     </application>
 

@@ -100,6 +100,7 @@ public class SelectCityActivity extends ExpandableListActivity {
                 textView.setGravity(Gravity.CENTER_VERTICAL | Gravity.LEFT);
                 textView.setPadding(36, 0, 0, 0);
                 textView.setTextSize(20);
+                textView.setText(getChild(groupPosition,childPosition).toString());
                 return textView;
             }
 
