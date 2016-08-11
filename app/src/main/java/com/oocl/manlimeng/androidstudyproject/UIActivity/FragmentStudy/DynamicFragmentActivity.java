@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,7 +14,7 @@ import android.widget.Button;
 
 import com.oocl.manlimeng.androidstudyproject.R;
 
-public class DynamicFragmentActivity extends Activity implements View.OnClickListener {
+public class DynamicFragmentActivity extends Activity implements View.OnClickListener,ContentFragment.OnFragmentInteractionListener, TitleFragment.OnFragmentInteractionListener ,FriendFragment.OnFragmentInteractionListener{
 
     private Button weixin;
     private Button friend;
@@ -30,8 +31,10 @@ public class DynamicFragmentActivity extends Activity implements View.OnClickLis
         friend= (Button) findViewById(R.id.friend);
         contract= (Button) findViewById(R.id.contract);
         setting= (Button) findViewById(R.id.setting);
-
+        weixin.setOnClickListener(this);
+        friend.setOnClickListener(this);
         setDefaultFragment();
+
     }
 
     private void setDefaultFragment()
@@ -91,5 +94,10 @@ public class DynamicFragmentActivity extends Activity implements View.OnClickLis
         // transaction.addToBackStack();
         // 事务提交
         transaction.commit();
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

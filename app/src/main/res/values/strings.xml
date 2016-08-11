@@ -99,4 +99,5 @@
     <string name="title_activity_study_fragment">studyFragmentActivity</string>
     <string name="title_activity_show_new">ShowNewActivity</string>
     <string name="title_activity_dynamic_fragment">DynamicFragmentActivity</string>
+    <string name="title_activity_fragment_connect">FragmentConnectActivity</string>
 </resources>
