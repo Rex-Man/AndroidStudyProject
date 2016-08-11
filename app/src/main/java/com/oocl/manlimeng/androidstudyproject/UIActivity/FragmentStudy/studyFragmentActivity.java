@@ -24,7 +24,8 @@ public class studyFragmentActivity extends Activity {
     }
     public void ActiveFragment(View view)
     {
-
+        Intent intent=new Intent(studyFragmentActivity.this,DynamicFragmentActivity.class);
+        startActivity(intent);
     }
 
     @Override
