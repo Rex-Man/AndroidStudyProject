@@ -1,42 +1,25 @@
 package com.oocl.manlimeng.androidstudyproject.UIActivity.FragmentStudy;
 
 import android.app.Activity;
-import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.oocl.manlimeng.androidstudyproject.R;
 
-public class studyFragmentActivity extends Activity {
+public class BookTwoPaneActivity extends Activity implements BookLFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_study_fragment);
-    }
-
-    public void StaticFragment(View view)
-    {
-        Intent intent=new Intent(studyFragmentActivity.this,StaticUseFragmentActivity.class);
-        startActivity(intent);
-    }
-    public void ActiveFragment(View view)
-    {
-        Intent intent=new Intent(studyFragmentActivity.this,DynamicFragmentActivity.class);
-        startActivity(intent);
-    }
-    public void FragmentConnect(View view)
-    {
-        Intent intent=new Intent(studyFragmentActivity.this,BookTwoPaneActivity.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_book_two_pane);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_study, menu);
+        getMenuInflater().inflate(R.menu.menu_book_two_pane, menu);
         return true;
     }
 
@@ -53,5 +36,20 @@ public class studyFragmentActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onItemSelected(Integer id) {
+       Bundle arguments=new Bundle();
+        arguments.putInt(BookDetailFragment.ITEM_ID,id);
+        BookDetailFragment fragment=new BookDetailFragment();
+        fragment.setArguments(arguments);
+        getFragmentManager().beginTransaction().replace(R.id.book_detail_containner,fragment).commit();
+
     }
 }

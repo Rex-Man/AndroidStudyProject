@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.oocl.manlimeng.androidstudyproject">
+    package="com.oocl.manlimeng.androidstudyproject" >
 
     <uses-permission android:name="android.permission.VIBRATE" />
 
@@ -8,10 +8,10 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -216,7 +216,7 @@
             android:label="@string/title_activity_study_fragment" />
         <activity
             android:name=".UIActivity.ActivityStudy.ShowNewActivity"
-            android:label="@string/title_activity_show_new">
+            android:label="@string/title_activity_show_new" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -227,10 +227,14 @@
         </activity>
         <activity
             android:name=".UIActivity.FragmentStudy.DynamicFragmentActivity"
-            android:label="@string/title_activity_dynamic_fragment"></activity>
+            android:label="@string/title_activity_dynamic_fragment" />
         <activity
             android:name=".UIActivity.FragmentStudy.FragmentConnectActivity"
-            android:label="@string/title_activity_fragment_connect"></activity>
+            android:label="@string/title_activity_fragment_connect" />
+        <activity
+            android:name=".UIActivity.FragmentStudy.BookTwoPaneActivity"
+            android:label="@string/title_activity_book_two_pane" >
+        </activity>
     </application>
 
 </manifest>

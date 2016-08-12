@@ -1,24 +1,27 @@
 package com.oocl.manlimeng.androidstudyproject.UIActivity.FragmentStudy;
 
+import android.app.Activity;
+import android.app.Fragment;
+import android.app.ListFragment;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.oocl.manlimeng.androidstudyproject.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link ListFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link ListFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class ListFragment extends Fragment {
+import com.oocl.manlimeng.androidstudyproject.entity.Book;
+import com.oocl.manlimeng.androidstudyproject.entity.BookContent;
+
+import java.util.List;
+
+
+public class BookLFragment extends ListFragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +33,7 @@ public class ListFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public ListFragment() {
+    public BookLFragment() {
         // Required empty public constructor
     }
 
@@ -43,8 +46,8 @@ public class ListFragment extends Fragment {
      * @return A new instance of fragment ListFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ListFragment newInstance(String param1, String param2) {
-        ListFragment fragment = new ListFragment();
+    public static BookLFragment newInstance(String param1, String param2) {
+        BookLFragment fragment = new BookLFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,15 +62,11 @@ public class ListFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        
+        ArrayAdapter<Book> arrayAdapter=new ArrayAdapter<Book>(getActivity(),android.R.layout.simple_list_item_activated_1,android.R.id.text1, BookContent.ITEMS);
+        setListAdapter(arrayAdapter);
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_list, container, false);
-    }
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
@@ -85,12 +84,33 @@ public class ListFragment extends Fragment {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
+
+
+    }
+    @Override
+    public void onAttach(Activity context) {
+        super.onAttach(context);
+        if (context instanceof OnFragmentInteractionListener) {
+            mListener = (OnFragmentInteractionListener) context;
+        } else {
+            throw new RuntimeException(context.toString()
+                    + " must implement OnFragmentInteractionListener");
+        }
+
+
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+
+        super.onListItemClick(l, v, position, id);
+        mListener.onItemSelected(BookContent.ITEMS.get(position).getId());
     }
 
     /**

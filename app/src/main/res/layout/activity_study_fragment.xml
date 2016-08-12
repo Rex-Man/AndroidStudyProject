@@ -17,5 +17,10 @@
         android:layout_height="wrap_content"
         android:text="动态的使用Fragment"
         android:onClick="ActiveFragment"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity通信Fragment"
+        android:onClick="FragmentConnect"/>
 
 </LinearLayout>

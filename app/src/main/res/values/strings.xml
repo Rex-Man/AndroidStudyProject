@@ -100,4 +100,5 @@
     <string name="title_activity_show_new">ShowNewActivity</string>
     <string name="title_activity_dynamic_fragment">DynamicFragmentActivity</string>
     <string name="title_activity_fragment_connect">FragmentConnectActivity</string>
+    <string name="title_activity_book_two_pane">BookTwoPaneActivity</string>
 </resources>
