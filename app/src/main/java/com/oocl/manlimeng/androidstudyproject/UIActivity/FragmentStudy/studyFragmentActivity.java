@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.oocl.manlimeng.androidstudyproject.R;
+import com.oocl.manlimeng.androidstudyproject.fragmentTranslateValue.activitytofragment.ActivityToFragmentActivity;
 
 public class studyFragmentActivity extends Activity {
 
@@ -33,6 +34,11 @@ public class studyFragmentActivity extends Activity {
         startActivity(intent);
     }
 
+    public void ActivityTraslateValueToFragment(View view)
+    {
+        Intent intent=new Intent(studyFragmentActivity.this,ActivityToFragmentActivity.class);
+        startActivity(intent);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

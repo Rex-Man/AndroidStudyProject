@@ -3,10 +3,11 @@ package com.oocl.manlimeng.androidstudyproject.fragmentTranslateValue.activityto
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.oocl.manlimeng.androidstudyproject.R;
 
@@ -24,11 +25,13 @@ public class ActivityToFragmentFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private static final String ACTIVITY_TO_FRAG_TEXT="activitytofragmentvalue";
+
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    private String mActivity_To_Frag;
     private OnFragmentInteractionListener mListener;
 
     /**
@@ -58,6 +61,7 @@ public class ActivityToFragmentFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+            mActivity_To_Frag=getArguments().getString(ACTIVITY_TO_FRAG_TEXT);
         }
     }
 
@@ -65,7 +69,10 @@ public class ActivityToFragmentFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_activity_to, container, false);
+        View view=inflater.inflate(R.layout.fragment_activity_to, container, false);
+        TextView textView= (TextView) view.findViewById(R.id.showActivityFromValue);
+        textView.setText(mActivity_To_Frag);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

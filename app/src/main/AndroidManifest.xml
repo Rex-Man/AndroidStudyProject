@@ -232,8 +232,12 @@
             android:name=".UIActivity.FragmentStudy.FragmentConnectActivity"
             android:label="@string/title_activity_fragment_connect" />
         <activity
-            android:name=".UIActivity.FragmentStudy.BookTwoPaneActivity"
-            android:label="@string/title_activity_book_two_pane" >
+        android:name=".UIActivity.FragmentStudy.BookTwoPaneActivity"
+        android:label="@string/title_activity_book_two_pane" >
+    </activity>
+        <activity
+            android:name=".fragmentTranslateValue.activitytofragment.ActivityToFragmentActivity"
+            android:label="ActivityToFragment" >
         </activity>
     </application>
 
