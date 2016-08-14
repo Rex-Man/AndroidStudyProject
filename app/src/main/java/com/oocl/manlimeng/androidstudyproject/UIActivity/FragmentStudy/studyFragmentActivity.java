@@ -9,6 +9,8 @@ import android.view.View;
 
 import com.oocl.manlimeng.androidstudyproject.R;
 import com.oocl.manlimeng.androidstudyproject.fragmentTranslateValue.activitytofragment.ActivityToFragmentActivity;
+import com.oocl.manlimeng.androidstudyproject.fragmentTranslateValue.fragmenttoactivity.FragmentToActivityActivity;
+import com.oocl.manlimeng.androidstudyproject.fragmentTranslateValue.fragmenttofragment.FragmentToFragmentActivity;
 
 public class studyFragmentActivity extends Activity {
 
@@ -37,6 +39,16 @@ public class studyFragmentActivity extends Activity {
     public void ActivityTraslateValueToFragment(View view)
     {
         Intent intent=new Intent(studyFragmentActivity.this,ActivityToFragmentActivity.class);
+        startActivity(intent);
+    }
+    public void FragmentTraslateValueToActivity(View view)
+    {
+        Intent intent=new Intent(studyFragmentActivity.this,FragmentToActivityActivity.class);
+        startActivity(intent);
+    }
+    public void FragmentTraslateValueToFragment(View view)
+    {
+        Intent intent=new Intent(studyFragmentActivity.this,FragmentToFragmentActivity.class);
         startActivity(intent);
     }
     @Override

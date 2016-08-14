@@ -27,4 +27,14 @@
         android:layout_height="wrap_content"
         android:text="Activity传值到Fragment"
         android:onClick="ActivityTraslateValueToFragment"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment传值到Activity"
+        android:onClick="FragmentTraslateValueToActivity"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment传值到Fragment"
+        android:onClick="FragmentTraslateValueToFragment"/>
 </LinearLayout>
