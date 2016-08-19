@@ -14,6 +14,7 @@ import android.widget.ListView;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ActionBarActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy.ActivityForResultActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy.BundleTestActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy.IntentActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy.LancherActivityCaseActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.AdapterViewFlipperActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ArrayListViewActivity;
@@ -115,6 +116,7 @@ public class MainActivity extends Activity {
         list.add("BundleActivity");
         list.add("ActivityForResultActivity");
         list.add("StudyFragmentActivity");
+        list.add("IntentActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -302,6 +304,10 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("StudyFragmentActivity")) {
                     Intent intent = new Intent(MainActivity.this, studyFragmentActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("IntentActivity")) {
+                    Intent intent = new Intent(MainActivity.this, IntentActivity.class);
                     startActivity(intent);
                 }
 

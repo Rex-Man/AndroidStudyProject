@@ -247,6 +247,18 @@
             android:name=".fragmentTranslateValue.fragmenttofragment.FragmentToFragmentActivity"
             android:label="@string/title_activity_fragment_to_fragment" >
         </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.IntentActivity"
+            android:label="@string/title_activity_intent" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.IntentResultActivity"
+            android:label="@string/title_activity_intent_result" >
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.CategoryTestActivity"
+            android:label="@string/title_activity_category_test" >
+        </activity>
     </application>
 
 </manifest>

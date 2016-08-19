@@ -103,4 +103,7 @@
     <string name="title_activity_book_two_pane">BookTwoPaneActivity</string>
     <string name="title_activity_fragment_to">FragmentToActivityActivity</string>
     <string name="title_activity_fragment_to_fragment">FragmentToFragmentActivity</string>
+    <string name="title_activity_intent">IntentActivity</string>
+    <string name="title_activity_intent_result">IntentResultActivity</string>
+    <string name="title_activity_category_test">CategoryTestActivity</string>
 </resources>
