@@ -4,27 +4,21 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.oocl.manlimeng.androidstudyproject.R;
 
-import org.w3c.dom.Text;
-
-public class CategoryTestActivity extends Activity {
+public class IntentDataActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category_test);
-        TextView tv= (TextView) findViewById(R.id.categoryactivitytv);
-        tv.setText(getIntent().getAction());
-        getIntent().getCategories();
+        setContentView(R.layout.activity_intent_data);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_category_test, menu);
+        getMenuInflater().inflate(R.menu.menu_intent_data, menu);
         return true;
     }
 

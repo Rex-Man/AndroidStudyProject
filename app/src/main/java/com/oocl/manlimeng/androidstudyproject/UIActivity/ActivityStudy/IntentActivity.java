@@ -3,6 +3,7 @@ package com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy;
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,6 +13,8 @@ import com.oocl.manlimeng.androidstudyproject.R;
 
 public class IntentActivity extends Activity {
 
+    final static String STUDY_ACTION="com.oocl.manlimeng.androidstudyproject.STUDY_ACTION";
+    final static String STUDY_CATIGORY="com.oocl.manlimeng.androidstudyproject.STUDY_CATIGORY";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +35,45 @@ public class IntentActivity extends Activity {
         intent.setComponent(componentName);
         startActivity(intent);
 
+    }
+    public void ActionCategoryWay(View view)
+    {
+        Intent intent=new Intent();
+        intent.setAction(IntentActivity.STUDY_ACTION);
+        intent.addCategory(STUDY_CATIGORY);
+        startActivity(intent);
+    }
+    public void GotoHome(View view)
+    {
+        Intent intent=new Intent();
+        intent.setAction(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        startActivity(intent);
+    }
+    public void OverWrite(View view)
+    {
+        Intent intent=new Intent();
+        intent.setType("abc/xyz");
+        intent.setData(Uri.parse("lee://www.fkjava.org:8888/test"));
+        startActivity(intent);
+    }
+    public void OverWriteTypeAndData(View view)
+    {
+        Intent intent=new Intent();
+        intent.setDataAndType(Uri.parse("lee://www.fkjava.org:8888/test"),"abc/xyz");
+        startActivity(intent);
+    }
+    public void SetType(View view)
+    {
+        Intent intent=new Intent();
+        intent.setType("abc/type");
+        startActivity(intent);
+    }
+    public void SetData(View view)
+    {
+        Intent intent=new Intent();
+        intent.setData(Uri.parse("lee://www.163.com:8888/test"));
+        startActivity(intent);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

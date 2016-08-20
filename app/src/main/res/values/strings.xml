@@ -106,4 +106,8 @@
     <string name="title_activity_intent">IntentActivity</string>
     <string name="title_activity_intent_result">IntentResultActivity</string>
     <string name="title_activity_category_test">CategoryTestActivity</string>
+    <string name="title_activity_over_write_data_type">OverWriteDataTypeActivity</string>
+    <string name="title_activity_intent_data">IntentDataActivity</string>
+    <string name="title_activity_both_type_and_data">BothTypeAndDataActivity</string>
+    <string name="title_activity_scheme_intent">SchemeIntentActivity</string>
 </resources>

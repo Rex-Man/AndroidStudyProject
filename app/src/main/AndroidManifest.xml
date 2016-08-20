@@ -258,6 +258,60 @@
         <activity
             android:name=".UIActivity.ActivityStudy.CategoryTestActivity"
             android:label="@string/title_activity_category_test" >
+            <intent-filter>
+                <action android:name="com.oocl.manlimeng.androidstudyproject.STUDY_ACTION" />
+
+                <category android:name="com.oocl.manlimeng.androidstudyproject.STUDY_CATIGORY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.OverWriteDataTypeActivity"
+            android:label="@string/title_activity_over_write_data_type" >
+            <intent-filter>
+                <action android:name="com.oocl.manlimeng.androidstudyproject.STUDY_ACTION" />
+
+                <category android:name="com.oocl.manlimeng.androidstudyproject.STUDY_CATIGORY" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="abc/xyz" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.IntentDataActivity"
+            android:label="@string/title_activity_intent_data" >
+            <intent-filter>
+                <action android:name="com.oocl.manlimeng.androidstudyproject.STUDY_ACTION" />
+
+                <category android:name="com.oocl.manlimeng.androidstudyproject.STUDY_CATIGORY" />
+
+                <data android:scheme="lee" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.BothTypeAndDataActivity"
+            android:label="@string/title_activity_both_type_and_data" >
+            <intent-filter>
+                <action android:name="com.oocl.manlimeng.androidstudyproject.STUDY_ACTION" />
+
+                <category android:name="com.oocl.manlimeng.androidstudyproject.STUDY_CATIGORY" />
+
+                <data android:mimeType="abc/xyz" />
+                <data android:scheme="lee" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UIActivity.ActivityStudy.SchemeIntentActivity"
+            android:label="@string/title_activity_scheme_intent" >
+            <intent-filter>
+                <action android:name="com.oocl.manlimeng.androidstudyproject.STUDY_ACTION" />
+                <category android:name="com.oocl.manlimeng.androidstudyproject.STUDY_CATIGORY"></category>
+                <data android:scheme="rex"></data>
+            </intent-filter>
         </activity>
     </application>
 
