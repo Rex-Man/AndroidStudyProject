@@ -110,4 +110,8 @@
     <string name="title_activity_intent_data">IntentDataActivity</string>
     <string name="title_activity_both_type_and_data">BothTypeAndDataActivity</string>
     <string name="title_activity_scheme_intent">SchemeIntentActivity</string>
+    <string name="title_activity_attribute_study">AttributeStudyActivity</string>
+    <string name="title_activity_handler_in_main">HandlerInMainActivity</string>
+    <string name="title_activity_handler_in_main2">HandlerInMain2Activity</string>
+    <string name="title_activity_save_data">SaveDataActivity</string>
 </resources>

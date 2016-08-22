@@ -49,9 +49,12 @@ public class IntentActivity extends Activity {
         intent.setAction(Intent.ACTION_MAIN);
         intent.addCategory(Intent.CATEGORY_HOME);
         startActivity(intent);
+        getResources().getIntArray(R.array.integerarray);
+
     }
     public void OverWrite(View view)
     {
+
         Intent intent=new Intent();
         intent.setType("abc/xyz");
         intent.setData(Uri.parse("lee://www.fkjava.org:8888/test"));

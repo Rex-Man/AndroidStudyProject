@@ -1,26 +1,24 @@
-package com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy;
+package com.oocl.manlimeng.androidstudyproject.UIActivity;
 
 import android.app.Activity;
-import android.graphics.drawable.LevelListDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.oocl.manlimeng.androidstudyproject.R;
 
-public class IntentDataActivity extends Activity {
+public class AttributeStudyActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intent_data);
-        LevelListDrawable levelListDrawable = new LevelListDrawable();
+        setContentView(R.layout.activity_attribute_study);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_intent_data, menu);
+        getMenuInflater().inflate(R.menu.menu_attribute_study, menu);
         return true;
     }
 

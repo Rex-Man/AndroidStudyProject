@@ -19,6 +19,7 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy.LancherAc
 import com.oocl.manlimeng.androidstudyproject.UIActivity.AdapterViewFlipperActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ArrayListViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.AsyncTaskActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.AttributeStudyActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.AutoCompleteTextActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.BaseAdapterActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ButtonActivity;
@@ -117,6 +118,7 @@ public class MainActivity extends Activity {
         list.add("ActivityForResultActivity");
         list.add("StudyFragmentActivity");
         list.add("IntentActivity");
+        list.add("AttributeActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -308,6 +310,10 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("IntentActivity")) {
                     Intent intent = new Intent(MainActivity.this, IntentActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("AttributeActivity")) {
+                    Intent intent = new Intent(MainActivity.this, AttributeStudyActivity.class);
                     startActivity(intent);
                 }
 

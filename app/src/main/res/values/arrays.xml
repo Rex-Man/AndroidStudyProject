@@ -24,4 +24,8 @@
         <item>Android</item>
         <item>iOS</item>
     </string-array>
+    <integer-array name="integerarray">
+        <item>@integer/c1</item>
+        <item>@integer/c2</item>
+    </integer-array>
 </resources>

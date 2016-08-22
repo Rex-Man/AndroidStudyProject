@@ -309,9 +309,27 @@
             android:label="@string/title_activity_scheme_intent" >
             <intent-filter>
                 <action android:name="com.oocl.manlimeng.androidstudyproject.STUDY_ACTION" />
-                <category android:name="com.oocl.manlimeng.androidstudyproject.STUDY_CATIGORY"></category>
-                <data android:scheme="rex"></data>
+
+                <category android:name="com.oocl.manlimeng.androidstudyproject.STUDY_CATIGORY" />
+
+                <data android:scheme="rex" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".UIActivity.AttributeStudyActivity"
+            android:label="@string/title_activity_attribute_study" >
+        </activity>
+        <activity
+            android:name=".UIActivity.HandlerInMainActivity"
+            android:label="@string/title_activity_handler_in_main" >
+        </activity>
+        <activity
+            android:name=".UIActivity.FragmentStudy.HandlerInMain2Activity"
+            android:label="@string/title_activity_handler_in_main2" >
+        </activity>
+        <activity
+            android:name=".UIActivity.SaveDataAndIO.SaveDataActivity"
+            android:label="@string/title_activity_save_data" >
         </activity>
     </application>
 

@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.oocl.manlimeng.androidstudyproject.R;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.FragmentStudy.HandlerInMain2Activity;
 
 public class HandlerActivity extends Activity {
 
@@ -30,7 +31,13 @@ public class HandlerActivity extends Activity {
     }
     public void HandlerInMainFunction(View view)
     {
-
+        Intent intent=new Intent(HandlerActivity.this,HandlerInMainActivity.class);
+        startActivity(intent);
+    }
+    public void HandlerInMainFunction2(View view)
+    {
+        Intent intent=new Intent(HandlerActivity.this,HandlerInMain2Activity.class);
+        startActivity(intent);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
