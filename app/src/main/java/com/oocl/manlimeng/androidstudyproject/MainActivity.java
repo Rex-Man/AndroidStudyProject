@@ -42,6 +42,8 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.NotificationActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.PickerActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ProgressBarActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.RelativeLayoutActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.SaveStudy.SaveStudyActivity;
+import com.oocl.manlimeng.androidstudyproject.UIActivity.SaveStudy.SaveStudySharedPreferenceActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ScrollViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SearchViewActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.SeekBarActivity;
@@ -57,6 +59,7 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.ToastActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewFlipperActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewStudyActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewSwicherActivity;
+import com.oocl.manlimeng.androidstudyproject.googlemap.MapsStudyActivity;
 
 import java.util.ArrayList;
 
@@ -119,6 +122,8 @@ public class MainActivity extends Activity {
         list.add("StudyFragmentActivity");
         list.add("IntentActivity");
         list.add("AttributeActivity");
+        list.add("SaveDataActivity");
+        list.add("MapActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -316,7 +321,14 @@ public class MainActivity extends Activity {
                     Intent intent = new Intent(MainActivity.this, AttributeStudyActivity.class);
                     startActivity(intent);
                 }
-
+                if (list.get(arg2).equals("SaveDataActivity")) {
+                    Intent intent = new Intent(MainActivity.this, SaveStudyActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("MapActivity")) {
+                    Intent intent = new Intent(MainActivity.this, MapsStudyActivity.class);
+                    startActivity(intent);
+                }
             }
 
         });

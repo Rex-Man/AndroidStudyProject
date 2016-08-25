@@ -1,4 +1,4 @@
-package com.oocl.manlimeng.androidstudyproject.UIActivity.SaveDataAndIO;
+package com.oocl.manlimeng.androidstudyproject.UIActivity.SaveStudy;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,18 +7,19 @@ import android.view.MenuItem;
 
 import com.oocl.manlimeng.androidstudyproject.R;
 
-public class SaveDataActivity extends Activity {
+public class SaveStudySQLITEActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_save_data);
+        setContentView(R.layout.activity_save_study_sqlite);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_save_data, menu);
+        getMenuInflater().inflate(R.menu.menu_save_study_sqlite, menu);
         return true;
     }
 

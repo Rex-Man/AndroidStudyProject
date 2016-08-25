@@ -114,4 +114,11 @@
     <string name="title_activity_handler_in_main">HandlerInMainActivity</string>
     <string name="title_activity_handler_in_main2">HandlerInMain2Activity</string>
     <string name="title_activity_save_data">SaveDataActivity</string>
+    <string name="title_activity_save_study">SaveStudyActivity</string>
+    <string name="title_activity_save_study_shared_preference">SaveStudySharedPreferenceActivity
+    </string>
+    <string name="title_activity_save_study_file">SaveStudyFileActivity</string>
+    <string name="title_activity_save_study_sd">SaveStudySDActivity</string>
+    <string name="title_activity_save_study_sqlite">SaveStudySQLITEActivity</string>
+    <string name="title_activity_maps_study">Map</string>
 </resources>
