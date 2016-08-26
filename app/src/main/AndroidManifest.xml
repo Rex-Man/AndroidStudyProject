@@ -370,6 +370,23 @@
             android:name=".googlemap.MapsStudyActivity"
             android:label="@string/title_activity_maps_study" >
         </activity>
+        <activity
+            android:name=".contentprovider.ContentProviderActivity"
+            android:label="@string/title_activity_content_provider" >
+        </activity>
+        <activity
+            android:name=".contentprovider.ContentProviderSimpleActivity"
+            android:label="@string/title_activity_content_provider_simple" >
+        </activity>
+        <provider
+            android:authorities="com.oocl.manlimeng.androidstudyproject.contentprovider.FirstProvider"
+            android:name=".contentprovider.FirstProvider"
+            android:exported="true"></provider>
+        <provider
+            android:authorities="com.oocl.manlimeng.androidstudyproject.contentprovider.DictProvider"
+            android:name=".contentprovider.DictProvider"
+            android:exported="true"
+            ></provider>
     </application>
 
 </manifest>
