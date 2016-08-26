@@ -1,6 +1,7 @@
 package com.oocl.manlimeng.androidstudyproject.contentprovider;
 
 import android.content.ContentProvider;
+import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.UriMatcher;
 import android.database.Cursor;
@@ -40,13 +41,36 @@ public class DictProvider extends ContentProvider {
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
         SQLiteDatabase db=dataHelper.getReadableDatabase();
+        switch(matcher.match(uri))
+        {
+            case BOOK:
+                long id=ContentUris.parseId(uri);
+                Cursor cursor=db.query("book", null, null, null,null, null, null);
+                break;
+            case BOOKS:
+                break;
+            default:
+                throw new IllegalArgumentException("未知Uri:"+uri);
+        }
 
-        return null;
     }
 
     @Override
-    public String getType(Uri uri) {
-        return null;
+    public String getType(Uri uri)
+    {
+        String returnValue="";
+        switch (matcher.match(uri))
+        {
+            case BOOK:
+                returnValue=TYPE_ITEM_DICT;
+                break;
+            case BOOKS:
+                returnValue=TYPE_DICTS;
+                break;
+            default:
+                throw new IllegalArgumentException("未知Uri:"+uri);
+        }
+        return returnValue;
     }
 
     @Override
@@ -55,8 +79,13 @@ public class DictProvider extends ContentProvider {
         switch (matcher.match(uri))
         {
             case BOOKS:
-                break;
-            case BOOK:
+                long id= db.insert("book",null,values);
+                if(id>0)
+                {
+                    Uri newuri= ContentUris.withAppendedId(uri,id);
+                    //getContext().getContentResolver().notifyChange(newuri,);
+                    return newuri;
+                }
                 break;
             default:
                 throw new IllegalArgumentException("未知Uri："+uri);
