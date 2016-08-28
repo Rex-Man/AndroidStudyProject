@@ -362,6 +362,8 @@
             android:name=".contentprovider.ContentProviderSimpleActivity"
             android:label="@string/title_activity_content_provider_simple"></activity>
 
+
+
         <provider
             android:name=".contentprovider.FirstProvider"
             android:authorities="com.oocl.manlimeng.androidstudyproject.contentprovider.FirstProvider"
@@ -370,9 +372,29 @@
             android:name=".contentprovider.DictProvider"
             android:authorities="com.oocl.manlimeng.androidstudyproject.contentprovider.DictProvider"
             android:exported="true" />
+
         <activity
             android:name=".contentprovider.ContentProviderDBActivity"
             android:label="@string/title_activity_content_provider_db"></activity>
+
+
+        <activity
+            android:name=".servicestudy.ServiceStudyActivity"
+            android:label="@string/title_activity_service_study" >
+        </activity>
+        <activity
+            android:name=".servicestudy.SimpleServiceActivity"
+            android:label="@string/title_activity_simple_service" >
+        </activity>
+
+        <service android:name=".servicestudy.MySimpleService" />
+        <service android:name=".servicestudy.MyBindService"></service>
+
+        <activity
+            android:name=".servicestudy.BindServiceActivity"
+            android:label="@string/title_activity_bind_service" >
+        </activity>
+
     </application>
 
 </manifest>
