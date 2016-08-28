@@ -61,6 +61,7 @@ import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewStudyActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ViewSwicherActivity;
 import com.oocl.manlimeng.androidstudyproject.contentprovider.ContentProviderActivity;
 import com.oocl.manlimeng.androidstudyproject.googlemap.MapsStudyActivity;
+import com.oocl.manlimeng.androidstudyproject.servicestudy.ServiceStudyActivity;
 
 import java.util.ArrayList;
 
@@ -126,6 +127,7 @@ public class MainActivity extends Activity {
         list.add("SaveDataActivity");
         list.add("MapActivity");
         list.add("ContentProviderActivity");
+        list.add("ServiceStudyActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -333,6 +335,10 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("ContentProviderActivity")) {
                     Intent intent = new Intent(MainActivity.this, ContentProviderActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("ServiceStudyActivity")) {
+                    Intent intent = new Intent(MainActivity.this, ServiceStudyActivity.class);
                     startActivity(intent);
                 }
             }
