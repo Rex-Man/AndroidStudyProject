@@ -123,4 +123,5 @@
     <string name="title_activity_maps_study">Map</string>
     <string name="title_activity_content_provider">ContentProviderActivity</string>
     <string name="title_activity_content_provider_simple">ContentProviderSimpleActivity</string>
+    <string name="title_activity_content_provider_db">ContentProviderDBActivity</string>
 </resources>

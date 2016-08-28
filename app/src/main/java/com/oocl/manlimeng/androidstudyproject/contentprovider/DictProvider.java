@@ -19,13 +19,20 @@ public class DictProvider extends ContentProvider {
     private static UriMatcher matcher=new UriMatcher(UriMatcher.NO_MATCH);
     private static final String TYPE_DICTS="vnd.android.cursor.dir/book";
     private static final String TYPE_ITEM_DICT="vnd.android.cursor.item/book";
+    private static final String TYPE_CATEGORY="vnd.android.cursor.dir/category";
+    private static final String TYPE_ITEM_CATEGORY="vnd.android.cursor.item/category";
+
     public static final int BOOKS=1;
     public static final int BOOK=2;
-    public static final Uri DICT_URI=Uri.parse("content://"+AUTHORITY+"/book");
+    public static final int CATEGORY=3;
+    public static final int CATEGORYS=4;
+
     MyDatabaseHelper dataHelper;
     static{
         matcher.addURI(AUTHORITY,"book",BOOKS);
         matcher.addURI(AUTHORITY,"book/#",BOOK);
+        matcher.addURI(AUTHORITY,"category",CATEGORYS);
+        matcher.addURI(AUTHORITY,"category/#",CATEGORY);
     }
 
 
@@ -41,18 +48,27 @@ public class DictProvider extends ContentProvider {
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
         SQLiteDatabase db=dataHelper.getReadableDatabase();
+        Cursor cursor=null;
         switch(matcher.match(uri))
         {
             case BOOK:
                 long id=ContentUris.parseId(uri);
-                Cursor cursor=db.query("book", null, null, null,null, null, null);
+                cursor=db.query("book", projection, "id=?", new String[]{String.valueOf(id)},null, null, sortOrder);
                 break;
             case BOOKS:
+                cursor=db.query("book", projection, selection, selectionArgs,null, null, sortOrder);
+                break;
+            case CATEGORY:
+                long categoryId=ContentUris.parseId(uri);
+                cursor=db.query("category", projection, "id=?", new String[]{String.valueOf(categoryId)},null, null, sortOrder);
+                break;
+            case CATEGORYS:
+                cursor=db.query("category", projection, selection, selectionArgs,null, null, sortOrder);
                 break;
             default:
                 throw new IllegalArgumentException("未知Uri:"+uri);
         }
-
+      return cursor;
     }
 
     @Override
@@ -66,6 +82,12 @@ public class DictProvider extends ContentProvider {
                 break;
             case BOOKS:
                 returnValue=TYPE_DICTS;
+                break;
+            case CATEGORY:
+                returnValue=TYPE_CATEGORY;
+                break;
+            case CATEGORYS:
+                returnValue=TYPE_ITEM_CATEGORY;
                 break;
             default:
                 throw new IllegalArgumentException("未知Uri:"+uri);
@@ -87,6 +109,12 @@ public class DictProvider extends ContentProvider {
                     return newuri;
                 }
                 break;
+            case CATEGORYS:
+                long categoryId= db.insert("category",null,values);
+                if(categoryId>0) {
+                    Uri newuri = ContentUris.withAppendedId(uri, categoryId);
+                    return newuri;
+                }
             default:
                 throw new IllegalArgumentException("未知Uri："+uri);
         }
@@ -96,12 +124,38 @@ public class DictProvider extends ContentProvider {
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
         SQLiteDatabase db=dataHelper.getWritableDatabase();
-        return 0;
+        switch (matcher.match(uri)) {
+            case BOOKS:
+                return db.delete("book",selection,selectionArgs);
+            case BOOK:
+                long id=ContentUris.parseId(uri);
+                return db.delete("book","id=?",new String[]{String.valueOf(id)});
+            case CATEGORYS:
+                return db.delete("category",selection,selectionArgs);
+            case CATEGORY:
+                long categoryId=ContentUris.parseId(uri);
+                return db.delete("category","id=?",new String[]{String.valueOf(categoryId)});
+            default:
+                throw new IllegalArgumentException("未知Uri：" + uri);
+        }
     }
 
     @Override
     public int update(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
         SQLiteDatabase db=dataHelper.getWritableDatabase();
-        return 0;
+        switch (matcher.match(uri)) {
+            case BOOKS:
+               return db.update("book",values,selection,selectionArgs);
+            case BOOK:
+                long bookId=ContentUris.parseId(uri);
+               return db.update("book",values,"id=?",new String[]{String.valueOf(bookId)});
+            case CATEGORYS:
+                return db.update("category",values,selection,selectionArgs);
+            case CATEGORY:
+                long categoryId=ContentUris.parseId(uri);
+                return db.update("category",values,"id=?",new String[]{String.valueOf(categoryId)});
+            default:
+                throw new IllegalArgumentException("未知Uri：" + uri);
+        }
     }
 }

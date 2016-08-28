@@ -25,7 +25,7 @@ public class ContentProviderActivity extends Activity {
     }
     public void ContentProviderDB(View view)
     {
-        Intent intent=new Intent(ContentProviderActivity.this,DictProvider.class);
+        Intent intent=new Intent(ContentProviderActivity.this,ContentProviderDBActivity.class);
         startActivity(intent);
     }
 
