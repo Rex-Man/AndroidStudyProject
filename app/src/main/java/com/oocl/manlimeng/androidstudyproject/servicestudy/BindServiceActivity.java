@@ -59,7 +59,9 @@ public class BindServiceActivity extends Activity {
     }
     public void StopBindService(View view)
     {
-        unbindService(mConnection);
+        if(mConnection!=null) {
+            unbindService(mConnection);
+        }
     }
 
     @Override
