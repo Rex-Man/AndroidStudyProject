@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
+import com.oocl.manlimeng.androidstudyproject.BroadcastReceiver.BroadCastReceiverActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ActionBarActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy.ActivityForResultActivity;
 import com.oocl.manlimeng.androidstudyproject.UIActivity.ActivityStudy.BundleTestActivity;
@@ -128,6 +129,7 @@ public class MainActivity extends Activity {
         list.add("MapActivity");
         list.add("ContentProviderActivity");
         list.add("ServiceStudyActivity");
+        list.add("BroadCastReceiverActivity");
         ArrayAdapter<String> myArrayAdapter = new ArrayAdapter<String>
                 (this,android.R.layout.simple_list_item_1,list);
         mylistview.setAdapter(myArrayAdapter);
@@ -339,6 +341,10 @@ public class MainActivity extends Activity {
                 }
                 if (list.get(arg2).equals("ServiceStudyActivity")) {
                     Intent intent = new Intent(MainActivity.this, ServiceStudyActivity.class);
+                    startActivity(intent);
+                }
+                if (list.get(arg2).equals("BroadCastReceiverActivity")) {
+                    Intent intent = new Intent(MainActivity.this, BroadCastReceiverActivity.class);
                     startActivity(intent);
                 }
             }

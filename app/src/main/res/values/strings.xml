@@ -129,5 +129,10 @@
     <string name="title_activity_service_study">ServiceStudyActivity</string>
     <string name="title_activity_simple_service">SimpleServiceActivity</string>
     <string name="title_activity_bind_service">BindServiceActivity</string>
+    <string name="title_activity_broad_cast_receiver">BroadCastReceiverActivity</string>
+    <string name="title_activity_normal_broadcast">NormalBroadcastActivity</string>
+    <string name="title_activity_order_broadcast">OrderBroadcastActivity</string>
+    <string name="title_activity_transfor_service_broadcast">TransforServiceBroadcastActivity
+    </string>
 
 </resources>

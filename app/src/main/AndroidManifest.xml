@@ -244,22 +244,22 @@
             android:label="@string/title_activity_fragment_connect" />
         <activity
             android:name=".UIActivity.FragmentStudy.BookTwoPaneActivity"
-            android:label="@string/title_activity_book_two_pane"></activity>
+            android:label="@string/title_activity_book_two_pane" />
         <activity
             android:name=".fragmentTranslateValue.activitytofragment.ActivityToFragmentActivity"
-            android:label="ActivityToFragment"></activity>
+            android:label="ActivityToFragment" />
         <activity
             android:name=".fragmentTranslateValue.fragmenttoactivity.FragmentToActivityActivity"
-            android:label="@string/title_activity_fragment_to"></activity>
+            android:label="@string/title_activity_fragment_to" />
         <activity
             android:name=".fragmentTranslateValue.fragmenttofragment.FragmentToFragmentActivity"
-            android:label="@string/title_activity_fragment_to_fragment"></activity>
+            android:label="@string/title_activity_fragment_to_fragment" />
         <activity
             android:name=".UIActivity.ActivityStudy.IntentActivity"
-            android:label="@string/title_activity_intent"></activity>
+            android:label="@string/title_activity_intent" />
         <activity
             android:name=".UIActivity.ActivityStudy.IntentResultActivity"
-            android:label="@string/title_activity_intent_result"></activity>
+            android:label="@string/title_activity_intent_result" />
         <activity
             android:name=".UIActivity.ActivityStudy.CategoryTestActivity"
             android:label="@string/title_activity_category_test">
@@ -322,28 +322,28 @@
         </activity>
         <activity
             android:name=".UIActivity.AttributeStudyActivity"
-            android:label="@string/title_activity_attribute_study"></activity>
+            android:label="@string/title_activity_attribute_study" />
         <activity
             android:name=".UIActivity.HandlerInMainActivity"
-            android:label="@string/title_activity_handler_in_main"></activity>
+            android:label="@string/title_activity_handler_in_main" />
         <activity
             android:name=".UIActivity.FragmentStudy.HandlerInMain2Activity"
-            android:label="@string/title_activity_handler_in_main2"></activity>
+            android:label="@string/title_activity_handler_in_main2" />
         <activity
             android:name=".UIActivity.SaveStudy.SaveStudyActivity"
-            android:label="@string/title_activity_save_study"></activity>
+            android:label="@string/title_activity_save_study" />
         <activity
             android:name=".UIActivity.SaveStudy.SaveStudySharedPreferenceActivity"
-            android:label="@string/title_activity_save_study_shared_preference"></activity>
+            android:label="@string/title_activity_save_study_shared_preference" />
         <activity
             android:name=".UIActivity.SaveStudy.SaveStudyFileActivity"
-            android:label="@string/title_activity_save_study_file"></activity>
+            android:label="@string/title_activity_save_study_file" />
         <activity
             android:name=".UIActivity.SaveStudy.SaveStudySDActivity"
-            android:label="@string/title_activity_save_study_sd"></activity>
+            android:label="@string/title_activity_save_study_sd" />
         <activity
             android:name=".UIActivity.SaveStudy.SaveStudySQLITEActivity"
-            android:label="@string/title_activity_save_study_sqlite"></activity>
+            android:label="@string/title_activity_save_study_sqlite" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -354,15 +354,13 @@
 
         <activity
             android:name=".googlemap.MapsStudyActivity"
-            android:label="@string/title_activity_maps_study"></activity>
+            android:label="@string/title_activity_maps_study" />
         <activity
             android:name=".contentprovider.ContentProviderActivity"
-            android:label="@string/title_activity_content_provider"></activity>
+            android:label="@string/title_activity_content_provider" />
         <activity
             android:name=".contentprovider.ContentProviderSimpleActivity"
-            android:label="@string/title_activity_content_provider_simple"></activity>
-
-
+            android:label="@string/title_activity_content_provider_simple" />
 
         <provider
             android:name=".contentprovider.FirstProvider"
@@ -375,25 +373,49 @@
 
         <activity
             android:name=".contentprovider.ContentProviderDBActivity"
-            android:label="@string/title_activity_content_provider_db"></activity>
-
-
+            android:label="@string/title_activity_content_provider_db" />
         <activity
             android:name=".servicestudy.ServiceStudyActivity"
-            android:label="@string/title_activity_service_study" >
-        </activity>
+            android:label="@string/title_activity_service_study" />
         <activity
             android:name=".servicestudy.SimpleServiceActivity"
-            android:label="@string/title_activity_simple_service" >
-        </activity>
+            android:label="@string/title_activity_simple_service" />
 
         <service android:name=".servicestudy.MySimpleService" />
-        <service android:name=".servicestudy.MyBindService"></service>
+        <service android:name=".servicestudy.MyBindService" />
 
         <activity
             android:name=".servicestudy.BindServiceActivity"
-            android:label="@string/title_activity_bind_service" >
-        </activity>
+            android:label="@string/title_activity_bind_service" />
+        <activity
+            android:name=".BroadcastReceiver.BroadCastReceiverActivity"
+            android:label="@string/title_activity_broad_cast_receiver" />
+        <activity
+            android:name=".BroadcastReceiver.NormalBroadcastActivity"
+            android:label="@string/title_activity_normal_broadcast" />
+        <activity
+            android:name=".BroadcastReceiver.OrderBroadcastActivity"
+            android:label="@string/title_activity_order_broadcast" />
+
+        <receiver android:name=".BroadcastReceiver.NormalBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.oocl.manlimeng.action.SEND_NORMAL_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".BroadcastReceiver.OrderBroadcastReceiver">
+            <intent-filter android:priority="20">
+                <action android:name="com.oocl.manlimeng.broadcast.SEND_ORDER_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".BroadcastReceiver.OrderBroadcastReceiver1">
+            <intent-filter android:priority="0">
+                <action android:name="com.oocl.manlimeng.broadcast.SEND_ORDER_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".BroadcastReceiver.TransforService"></service>
+        <activity
+            android:name=".BroadcastReceiver.TransforServiceBroadcastActivity"
+            android:label="@string/title_activity_transfor_service_broadcast"></activity>
 
     </application>
 
